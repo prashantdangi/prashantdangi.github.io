@@ -60,8 +60,8 @@ var store = [{
         "teaser": null
       },{
         "title": "Understanding Large Language models(LLMs)",
-        "excerpt":"“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks” How the Large Language Model(LLM) works Large Language Model Works using Deep Learning techniques and large amount of text data. The LLM models are typically based on transformer architecture, like generative pre-trained transformer(gpt), which are exceptional at...","categories": [],
+        "excerpt":"“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks” How the Large Language Model(LLM) works Large Language Model Works using Deep Learning techniques and large amount of text data. The LLM models are typically based on transformer architecture, like generative pre-trained transformer(gpt), which are exceptional at...","categories": ["reverse-engineering"],
         "tags": [],
-        "url": "/llm/",
+        "url": "/reverse-engineering/llm/",
         "teaser": null
       }]
