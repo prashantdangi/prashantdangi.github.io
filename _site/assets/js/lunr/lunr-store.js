@@ -52,4 +52,16 @@ var store = [{
         "tags": [],
         "url": "/LLM-OWASP-top-10/",
         "teaser": null
+      },{
+        "title": "Retrieval Augmented Generation(RAG) is a threat to AI",
+        "excerpt":"Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse LLM using RAG has certain issues Misinformation and Manipulation Retrieval-Augmented Generation(RAG) depends in external sources, which might contain biased, outdated or false information. If these sources are unreliable, the AI...","categories": [],
+        "tags": [],
+        "url": "/rag/",
+        "teaser": null
+      },{
+        "title": "Understanding Large Language models(LLMs)",
+        "excerpt":"“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks” How the Large Language Model(LLM) works Large Language Model Works using Deep Learning techniques and large amount of text data. The LLM models are typically based on transformer architecture, like generative pre-trained transformer(gpt), which are exceptional at...","categories": [],
+        "tags": [],
+        "url": "/llm/",
+        "teaser": null
       }]
