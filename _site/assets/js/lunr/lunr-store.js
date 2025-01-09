@@ -60,8 +60,20 @@ var store = [{
         "teaser": null
       },{
         "title": "Understanding Large Language models(LLMs)",
-        "excerpt":"“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks” How the Large Language Model(LLM) works Large Language Model Works using Deep Learning techniques and large amount of text data. The LLM models are typically based on transformer architecture, like generative pre-trained transformer(gpt), which are exceptional at...","categories": ["reverse-engineering"],
+        "excerpt":"“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks” How the Large Language Model(LLM) works Large Language Model Works using Deep Learning techniques and large amount of text data. The LLM models are typically based on transformer architecture, like generative pre-trained transformer(gpt), which are exceptional at...","categories": [],
         "tags": [],
-        "url": "/reverse-engineering/llm/",
+        "url": "/llm/",
+        "teaser": null
+      },{
+        "title": "The Elf Files",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/The-ELF-files/",
+        "teaser": null
+      },{
+        "title": "Buffer Overflows and The Virtual memory layout",
+        "excerpt":"What is Virtual Memory Layout Operating System manages memory for programs using virtual memory, which is referred as the virtual memory layout. Programs are given their own virtual address space, isolating them from other programs. Below is the representation of the Virtual memory layout Parts of Virtual Memory Address This...","categories": ["binary-exploitation"],
+        "tags": [],
+        "url": "/binary-exploitation/virtual-memory-layout/",
         "teaser": null
       }]

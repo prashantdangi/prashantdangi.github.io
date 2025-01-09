@@ -114,11 +114,9 @@ analytics:
 author:
   name             : "Prashant Dangi"
   avatar           : /assets/images/oooo.webp
-  bio              : "Hi, I am a Security Researcher with a passion for cybersecurity and 
-learning low level codes.<br><br>I generally works with C, Pyhton and Assembly, working with Hardware level codes and Linux binaries.
- <br><br>With over 4+ years of experience as Vulnerability Assessment and Penetration Testing (VAPT) expert, I am sharing 
- my learnings and experince with you."
-  location         : "India"
+  bio              : "Hi, I am a Security Researcher with a passion for cybersecurity and low level codes.<br><br>I generally works with C, Pyhton and Assembly, working with Hardware level code and Linux binaries.
+  <br><br>What you'll find on this page:<br>Binary Exploitation<br>Reverse Engineering<br>Linux (x86_64)"
+ # location         : "India"
   email            :
   links:
     - label: "Email"

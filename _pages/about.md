@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 permalink: /about/
 toc: true
 ---
@@ -17,6 +17,4 @@ I started this blog to bridge the gap between complex cybersecurity topics and e
 
 ## Connect with me
 
-Whether you're a tech enthusiast, business owner, or security professional, my blog offers practical tips, tutorials, and resources to help you stay safe in today’s digital world.
-
-tay updated with the latest in cybersecurity by subscribing to my newsletter or following me on [LinkedIn](https://www.linkedin.com/in/prashantdangi983/) and [X](https://x.com/0xd4ngi). Let’s build a safer internet together!
+Stay updated with the latest in cybersecurity by subscribing to my newsletter(will be available soon) or following me on [LinkedIn](https://www.linkedin.com/in/prashantdangi983/) and [X](https://x.com/0xd4ngi). Let’s build a safer internet together!

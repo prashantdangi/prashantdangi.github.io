@@ -1,13 +1,15 @@
 # main links
 main:
-  
-  - title: "About"
-    url: /about/
-  - title: "Archive"
-    url: /archive/
   - title: "HackSpot"
     url: /hackspot/
+  - title: "Archive"
+    url: /archive/  
+  - title: "About"
+    url: /about/
   - title: "Privacy Policy"
     url: /privacy-policy/
+  
+  
+  
   
   
