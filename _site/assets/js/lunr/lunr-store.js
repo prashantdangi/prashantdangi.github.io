@@ -65,10 +65,10 @@ var store = [{
         "url": "/llm/",
         "teaser": null
       },{
-        "title": "The Elf Files",
-        "excerpt":" ","categories": [],
+        "title": "The ELF Files",
+        "excerpt":" ","categories": ["reverse-engineering"],
         "tags": [],
-        "url": "/The-ELF-files/",
+        "url": "/reverse-engineering/The-ELF-files/",
         "teaser": null
       },{
         "title": "Buffer Overflows and The Virtual memory layout",
