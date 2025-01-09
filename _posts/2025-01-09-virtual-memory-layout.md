@@ -119,3 +119,4 @@ Just like before it can accept 32 bits of data. but if we provide it with more t
 
 ![](/assets/images/offset.png)
 
+**If memory can be corrupted through a vulnerability, control flow and data in memory can be manipulated**
