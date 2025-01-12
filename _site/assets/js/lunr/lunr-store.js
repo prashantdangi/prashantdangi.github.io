@@ -65,12 +65,6 @@ var store = [{
         "url": "/llm/",
         "teaser": null
       },{
-        "title": "The ELF Files",
-        "excerpt":" ","categories": ["reverse-engineering"],
-        "tags": [],
-        "url": "/reverse-engineering/The-ELF-files/",
-        "teaser": null
-      },{
         "title": "Buffer Overflows and The Virtual memory layout",
         "excerpt":"What is Virtual Memory Layout Operating System manages memory for programs using virtual memory, which is referred as the virtual memory layout. Programs are given their own virtual address space, isolating them from other programs. Below is the representation of the Virtual memory layout Parts of Virtual Memory Address This...","categories": ["binary-exploitation"],
         "tags": [],
