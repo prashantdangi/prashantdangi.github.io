@@ -6,8 +6,8 @@ main:
     url: /archive/  
   - title: "About"
     url: /about/
-  - title: "Privacy Policy"
-    url: /privacy-policy/
+  # - title: "Privacy Policy"
+  #   url: /privacy-policy/
   
   
   
