@@ -14,14 +14,14 @@ Fortinet CISO received a mail requesting an invoice amount to be paid, with payp
 This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal's
 phishing detection policy.
 
-# This is not tagging of url to text but Man in the Middle(MITM) Attack
+# This is not tagging of url to text but reverse web proxy phishing
 
 This attack starts with an authentic email sent from *service@paypal.com* requsting money for some invoice. Exeperienced internet
 users may be fooled by the email's appearance and authenticity of email with legitimate PayPal login URL.
 
 The Pay Now button at the bottom is genuine looking redirecting to paypal's website.
 
-It might be using Man in the Middle(MitM) Proxy phishing. With the help of tools like
+It might be using reverse web Proxy phishing. With the help of tools like
 [Evilginx](https://github.com/kgretzky/evilginx2)
 
 Tools like [Evilginx](https://github.com/kgretzky/evilginx2) uses phishlets to get to legitimate websites and phishing domain lures
