@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>LLM OWASP TOP 10 vulnerabilities - PD @0xd4ngi</title>
-<meta name="description" content="LLM1:2025 Prompt Injection/Jailbreaking">
+<!-- begin _includes/seo.html --><title>PayPal Phishing with PayPal URL - PD @0xd4ngi</title>
+<meta name="description" content="Attackers using sophisticated attacks to bypass login security">
 
 
   <meta name="author" content="Prashant Dangi">
@@ -23,20 +23,20 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="PD @0xd4ngi">
-<meta property="og:title" content="LLM OWASP TOP 10 vulnerabilities">
-<meta property="og:url" content="http://localhost:4000/LLM-OWASP-top-10/">
+<meta property="og:title" content="PayPal Phishing with PayPal URL">
+<meta property="og:url" content="http://localhost:4000/phishing/paypal-phishing/">
 
 
-  <meta property="og:description" content="LLM1:2025 Prompt Injection/Jailbreaking">
+  <meta property="og:description" content="Attackers using sophisticated attacks to bypass login security">
 
 
 
 
 
   <meta name="twitter:site" content="@0xd4ngi">
-  <meta name="twitter:title" content="LLM OWASP TOP 10 vulnerabilities">
-  <meta name="twitter:description" content="LLM1:2025 Prompt Injection/Jailbreaking">
-  <meta name="twitter:url" content="http://localhost:4000/LLM-OWASP-top-10/">
+  <meta name="twitter:title" content="PayPal Phishing with PayPal URL">
+  <meta name="twitter:description" content="Attackers using sophisticated attacks to bypass login security">
+  <meta name="twitter:url" content="http://localhost:4000/phishing/paypal-phishing/">
 
   
     <meta name="twitter:card" content="summary">
@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-01-02T00:00:00+05:30">
+  <meta property="article:published_time" content="2025-01-18T00:00:00+05:30">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/LLM-OWASP-top-10/">
+<link rel="canonical" href="http://localhost:4000/phishing/paypal-phishing/">
 
 
 
@@ -285,202 +285,19 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="LLM OWASP TOP 10 vulnerabilities">
-    <meta itemprop="description" content="LLM1:2025 Prompt Injection/Jailbreaking">
-    <meta itemprop="datePublished" content="2025-01-02T00:00:00+05:30">
+    <meta itemprop="headline" content="PayPal Phishing with PayPal URL">
+    <meta itemprop="description" content="Attackers using sophisticated attacks to bypass login security">
+    <meta itemprop="datePublished" content="2025-01-18T00:00:00+05:30">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/LLM-OWASP-top-10/" itemprop="url">LLM OWASP TOP 10 vulnerabilities
+            <a href="http://localhost:4000/phishing/paypal-phishing/" itemprop="url">PayPal Phishing with PayPal URL
 </a>
           </h1>
           
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</a></li><li><a href="#llm22025-sensitive-information-disclosure">LLM2:2025 Sensitive Information Disclosure</a></li><li><a href="#llm32025-supply-chain">LLM3:2025 Supply Chain</a></li><li><a href="#llm42025-data-and-model-poisoning">LLM4:2025 Data and Model Poisoning</a></li><li><a href="#llm52025-improper-output-handling">LLM5:2025 Improper Output Handling</a></li><li><a href="#llm62025-excessive-agency">LLM6:2025 Excessive Agency</a></li><li><a href="#llm72025-system-prompt-leakage">LLM7:2025 System Prompt Leakage</a></li><li><a href="#llm82025-vector-and-embedding-weakness">LLM8:2025 Vector and Embedding Weakness</a></li><li><a href="#llm92025-misinformation">LLM9:2025 Misinformation</a></li><li><a href="#llm102025-unbound-consumption">LLM10:2025 Unbound Consumption</a></li></ul>
-            </nav>
-          </aside>
-        
-        <h3 id="llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</h3>
-
-<p>Prompt injection vulnerability alters the Large-Language-Models(LLMs) behavious or output in an unintended way when user prompts something unusual</p>
-
-<p>Prompt injection does not need text to be human visible/readable as long as the content is parsed by the model.</p>
-
-<p>For Example: Parsing white text on white papers(cannot be parsed by humans but will pe parsed by LLM models)</p>
-
-<p>Retrieval-Augmented-Generation(RAG) and fine tunning aim to make LLM outputs more relevent and accurate.</p>
-
-<p>Jailbreaking is a form of prompt injection where the attacker provides inputs that cause the model to disregard its safety protocols entirely.</p>
-
-<h3 id="llm22025-sensitive-information-disclosure">LLM2:2025 Sensitive Information Disclosure</h3>
-
-<p>LLMs when embedded in application exposes risk to expose Sensitive Data, proprietory algorithms, or confidential details through their output.</p>
-
-<p>Revealing training data can expose models to inversion attacks, where attacks extract sensitive information or reconstruct outputs</p>
-
-<p>The “proof pudding attack” (CVE-2019-20634)</p>
-
-<h3 id="llm32025-supply-chain">LLM3:2025 Supply Chain</h3>
-
-<p>LLMs are susceptible to vulnerabilities of third-party pre trained models and data.</p>
-
-<p>Open-access LLMs and fine tunning methods like “LoRA”(Low-Rank Adaptation) and “PEFT”(Parameter-efficient Fine-tunning) especially on platforms like Hugging Face introduce new Supply-Chain Attacks.</p>
-
-<h3 id="llm42025-data-and-model-poisoning">LLM4:2025 Data and Model Poisoning</h3>
-
-<p>Data and Model Poisoning is somewhat same as LLM3:2025 Supply Chain Vulnerabilities discussed above.</p>
-
-<p>Data and model poisoning occurs when pre-trained, fine-tunning and embedded data is manipulated to introduce vulnerabilities, backdoors, or biases</p>
-
-<h3 id="llm52025-improper-output-handling">LLM5:2025 Improper Output Handling</h3>
-
-<p>Improper Output Handling refers specifically to insufficient validation, sanitization, and handling
-of the outputs generated by large language models before they are passed downstream to other
-components and systems. Since LLM-generated content can be controlled by prompt input, this
-behavior is similar to providing users indirect access to additional functionality.</p>
-
-<h3 id="llm62025-excessive-agency">LLM6:2025 Excessive Agency</h3>
-
-<p>LLM-based system is often granted a degree of agency by its developer - the ability to call functions or interface with other systems via extensions (sometimes referred to as tools, skills or
-plugins by different vendors) to undertake actions in response to a prompt. The decision over which extension to invoke may also be delegated to an LLM ‘agent’ to dynamically determine based
-on input prompt or LLM output. Agent-based systems will typically make repeated calls to an LLM using output from previous invocations to ground and direct subsequent invocations.</p>
-
-<p>Excessive Agency is the vulnerability that enables damaging actions to be performed in response to unexpected, ambiguous or manipulated outputs from an LLM, regardless of what is causing the
-LLM to malfunction. Common triggers include:</p>
-
-<p>• hallucination/confabulation caused by poorly-engineered benign prompts, or just a poorly-performing model;</p>
-
-<p>• direct/indirect prompt injection from a malicious user, an earlier invocation of a malicious/compromised extension, or (in multi-agent/collaborative systems) a malicious/compromised peer agent.</p>
-
-<p>The root cause of Excessive Agency is typically one or more of:<br />
-• excessive functionality;<br />
-• excessive permissions;<br />
-• excessive autonomy.</p>
-
-<p>Excessive Agency can lead to a broad range of impacts across the confidentiality, integrity and availability spectrum, and is dependent on which systems an LLM-based app is able to interact
-with.</p>
-
-<p>Note: Excessive Agency differs from Insecure Output Handling which is concerned with insufficient scrutiny of LLM outputs.</p>
-
-<h3 id="llm72025-system-prompt-leakage">LLM7:2025 System Prompt Leakage</h3>
-
-<p>The system prompt leakage vulnerability in LLMs refers to the risk that the system prompts or instructions used to steer the behavior of the model can also contain sensitive information that was not intended to be discovered.</p>
-
-<h3 id="llm82025-vector-and-embedding-weakness">LLM8:2025 Vector and Embedding Weakness</h3>
-
-<p>In System utilizing Retrieval Augmented Model(RAG) with Large Language Models(LLMs) are more prone to these types of attacks.</p>
-
-<p>Weakness in how vectors and embeddings are generated, stored, or retrieved can be exploited by malicious actions(intentional or unintentional) to inject harful content, manipulate model outputs and access sensitive information.</p>
-
-<h3 id="llm92025-misinformation">LLM9:2025 Misinformation</h3>
-
-<p>Large Language Models(LLMs) produces false or misleading information that appears credible.</p>
-
-<p>The major cause of misinformation is LLMs Hallucination. Hallucination occur when LLMs try to fill empty gaps in between unknown user input without truly understanding the content. And this is the major source of Misinformation.</p>
-
-<p>Retrieval-Augmented-Generation(RAG) can be used to improve the reliability of the model.</p>
-
-<h3 id="llm102025-unbound-consumption">LLM10:2025 Unbound Consumption</h3>
-
-<p>Unbounded Consumption refers to the process where a Large Language Model (LLM) generates  outputs based on input queries or prompts. Inference is a critical function of LLMs, involving the application of learned patterns and knowledge to produce relevant responses or predictions.</p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-01-02T00:00:00+05:30">January 2, 2025</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">Share on</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?via=0xd4ngi&text=LLM+OWASP+TOP+10+vulnerabilities%20http%3A%2F%2Flocalhost%3A4000%2FLLM-OWASP-top-10%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FLLM-OWASP-top-10%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/LLM-OWASP-top-10/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/GPCSSI-24/" class="pagination--pager" title="Gpcssi 24
-">Previous</a>
-    
-    
-      <a href="/rag/" class="pagination--pager" title="Retrieval Augmented Generation(RAG) is a threat to AI
-">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    
-<div class="page__related">
-  
-  <h2 class="page__related-title">You may also enjoy</h2>
-  <div class="grid__wrapper">
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/phishing/paypal-phishing/" rel="permalink">PayPal Phishing with PayPal URL
-</a>
-      
-    </h2>
-    
 
   <p class="page__meta">
     
@@ -501,11 +318,118 @@ with.</p>
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Attackers using sophisticated attacks to bypass login security
-</p>
-  </article>
-</div>
+        </header>
+      
 
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</a></li><li><a href="#this-is-not-tagging-of-url-to-text-but-man-in-the-middlemitm-attack">This is not tagging of url to text but Man in the Middle(MITM) Attack</a></li><li><a href="#but-how-did-he-got-to-know">BUT how did he got to know</a><ul><li><a href="#about-the-email">About the email</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</h1>
+
+<p>Fortinet CISO received a mail requesting an invoice amount to be paid, with paypal domain <strong>paypal.com</strong></p>
+
+<p><img src="/assets/images/paypal-phishing.jpeg" alt="" /></p>
+
+<p>This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s
+phishing detection policy.</p>
+
+<h1 id="this-is-not-tagging-of-url-to-text-but-man-in-the-middlemitm-attack">This is not tagging of url to text but Man in the Middle(MITM) Attack</h1>
+
+<p>This attack starts with an authentic email sent from <em>service@paypal.com</em> requsting money for some invoice. Exeperienced internet
+users may be fooled by the email’s appearance and authenticity of email with legitimate PayPal login URL.</p>
+
+<p>The Pay Now button at the bottom is genuine looking redirecting to paypal’s website.</p>
+
+<p>It might be using Man in the Middle(MitM) Proxy phishing. With the help of tools like
+<a href="https://github.com/kgretzky/evilginx2">Evilginx</a></p>
+
+<p>Tools like <a href="https://github.com/kgretzky/evilginx2">Evilginx</a> uses phishlets to get to legitimate websites and phishing domain lures
+to get the credentials and cookies of the user to redirect to legit website and intercepting the traffic in between.</p>
+
+<h1 id="but-how-did-he-got-to-know"><em>BUT</em> how did he got to know</h1>
+
+<p>When he saw that it was sent to <em>Billingdepartments1[@]gkjyryfjy876.onmicrosoft.com</em> and if he might login using his credentials all 
+his credentials and cookies might be gone.</p>
+
+<p><img src="/assets/images/fig04.jpeg" alt="" /></p>
+
+<h2 id="about-the-email">About the email</h2>
+
+<p>The attackers have registered a MS365 test domain, Which is free for three months, and then a distribution list containing the victim emails <em>.onmicrosoft.com</em></p>
+
+<p>Reference for the post: <a href="https://www.fortinet.com/blog/threat-research/phish-free-paypal-phishing">Phish-free PayPal Phishing</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#phishing" class="page__taxonomy-item p-category" rel="tag">phishing</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-01-18T00:00:00+05:30">January 18, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=0xd4ngi&text=PayPal+Phishing+with+PayPal+URL%20http%3A%2F%2Flocalhost%3A4000%2Fphishing%2Fpaypal-phishing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fphishing%2Fpaypal-phishing%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/phishing/paypal-phishing/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/binary-exploitation/virtual-memory-layout/" class="pagination--pager" title="Buffer Overflows and The Virtual memory layout
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
     
       
       
@@ -630,6 +554,47 @@ with.</p>
 </div>
 
     
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/LLM-OWASP-top-10/" rel="permalink">LLM OWASP TOP 10 vulnerabilities
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">LLM1:2025 Prompt Injection/Jailbreaking
+</p>
+  </article>
+</div>
+
+    
   </div>
 </div>
 
@@ -715,8 +680,8 @@ with.</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/LLM-OWASP-top-10/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/LLM-OWASP-top-10"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/phishing/paypal-phishing/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/phishing/paypal-phishing"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

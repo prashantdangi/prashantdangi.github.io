@@ -1,0 +1,12 @@
+---
+title: RiSC-V Reduced instruction set architecture
+excerpt: 
+categories: 
+
+---
+
+# What is RiSC-V (risk-five)
+
+RiSC-V is an open-source instruction set architecture(iSA) based on principles of Reduced Instruction Set architecture
+
+* Supports 32-bit (RV32), 64-bit(RV64), and 128-bit(RV128) addressing

