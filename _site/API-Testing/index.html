@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Hacking API’s by @corey j. ball - PD @0xd4ngi</title>
-<meta name="description" content="API Testing">
+<!-- begin _includes/seo.html --><title>Understanding API Security and Testing - PD @0xd4ngi</title>
+<meta name="description" content="Introduction to API Testing">
 
 
   <meta name="author" content="Prashant Dangi">
@@ -23,19 +23,19 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="PD @0xd4ngi">
-<meta property="og:title" content="Hacking API’s by @corey j. ball">
+<meta property="og:title" content="Understanding API Security and Testing">
 <meta property="og:url" content="http://localhost:4000/API-Testing/">
 
 
-  <meta property="og:description" content="API Testing">
+  <meta property="og:description" content="Introduction to API Testing">
 
 
 
 
 
   <meta name="twitter:site" content="@0xd4ngi">
-  <meta name="twitter:title" content="Hacking API’s by @corey j. ball">
-  <meta name="twitter:description" content="API Testing">
+  <meta name="twitter:title" content="Understanding API Security and Testing">
+  <meta name="twitter:description" content="Introduction to API Testing">
   <meta name="twitter:url" content="http://localhost:4000/API-Testing/">
 
   
@@ -285,8 +285,8 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Hacking API’s by @corey j. ball">
-    <meta itemprop="description" content="API Testing">
+    <meta itemprop="headline" content="Understanding API Security and Testing">
+    <meta itemprop="description" content="Introduction to API Testing">
     <meta itemprop="datePublished" content="2024-02-27T00:00:00+05:30">
     
 
@@ -294,7 +294,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/API-Testing/" itemprop="url">Hacking API’s by @corey j. ball
+            <a href="http://localhost:4000/API-Testing/" itemprop="url">Understanding API Security and Testing
 </a>
           </h1>
           
@@ -311,7 +311,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -326,31 +326,82 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#api-testing">API Testing</a></li><li><a href="#bussiness-logic-flaws">Bussiness Logic Flaws</a></li></ul>
+              <ul class="toc__menu"><li><a href="#introduction-to-api-testing">Introduction to API Testing</a></li><li><a href="#core-api-testing-concepts">Core API Testing Concepts</a></li><li><a href="#common-api-security-vulnerabilities">Common API Security Vulnerabilities</a><ul><li><a href="#1-business-logic-flaws">1. Business Logic Flaws</a></li><li><a href="#2-authorization-issues">2. Authorization Issues</a></li><li><a href="#3-input-validation-weaknesses">3. Input Validation Weaknesses</a></li><li><a href="#4-best-practices-for-api-security">4. Best Practices for API Security</a></li></ul></li><li><a href="#tools-for-api-testing">Tools for API Testing</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#references">References</a></li></ul>
             </nav>
           </aside>
         
-        <h2 id="api-testing">API Testing</h2>
+        <h2 id="introduction-to-api-testing">Introduction to API Testing</h2>
 
-<p>API testing requires new skills, tools and new approaches</p>
+<p>Application Programming Interfaces (APIs) have become the backbone of modern applications, making API security testing crucial for organizations. This post explores key concepts in API security testing and common vulnerabilities.</p>
 
-<h2 id="bussiness-logic-flaws">Bussiness Logic Flaws</h2>
+<h2 id="core-api-testing-concepts">Core API Testing Concepts</h2>
 
-<p>Manipulating the legitimate data, workflows and functionality of an API</p>
+<ul>
+  <li><strong>Authentication Testing</strong>: Verifying how the API handles user identity</li>
+  <li><strong>Authorization Testing</strong>: Checking access control mechanisms</li>
+  <li><strong>Data Validation</strong>: Testing input handling and validation</li>
+  <li><strong>Error Handling</strong>: Examining how the API responds to errors</li>
+  <li><strong>Performance Testing</strong>: Evaluating response times and load handling</li>
+</ul>
 
-<ol>
-  <li>Misusing HTML Elements and other client side code</li>
-  <li>Authorization Bypass &lt;/br&gt;
-Broken object level authentication(BOLA) is #1 OWASP API Security
+<h2 id="common-api-security-vulnerabilities">Common API Security Vulnerabilities</h2>
+
+<h3 id="1-business-logic-flaws">1. Business Logic Flaws</h3>
+<p>Business logic flaws occur when attackers manipulate legitimate API workflows:</p>
+<ul>
+  <li>Parameter manipulation</li>
+  <li>State manipulation</li>
+  <li>Process timing exploitation</li>
+</ul>
+
+<h3 id="2-authorization-issues">2. Authorization Issues</h3>
+<p>Authorization vulnerabilities remain a critical concern:</p>
+<ul>
+  <li>Broken Object Level Authorization (BOLA)
     <ul>
-      <li>lateral movement : accessing data of another account at the same privilage level</li>
-      <li>Privilage Escalation : Accessing data that the current privilage level isn’t supposed to have acces to &lt;/br&gt;
-(Strong authorization and authentication protocols - such as oAuth or OpenID - should be implemented to prevent authorization bypass and protect your systems against this attack vector.)</li>
+      <li>Lateral movement attacks</li>
+      <li>Privilege escalation attempts</li>
     </ul>
   </li>
-  <li>Failing to handle unconventional User Input(Fuzzing random input)</li>
-  <li>Domain-Specific Flaws : API management tools analystics and reporting capabilities to identify and analyze usage patters</li>
-</ol>
+  <li>Missing access controls</li>
+  <li>Insufficient authorization checks</li>
+</ul>
+
+<h3 id="3-input-validation-weaknesses">3. Input Validation Weaknesses</h3>
+<ul>
+  <li>Improper handling of unexpected input</li>
+  <li>Lack of proper input sanitization</li>
+  <li>Missing type checking</li>
+  <li>Insufficient length validation</li>
+</ul>
+
+<h3 id="4-best-practices-for-api-security">4. Best Practices for API Security</h3>
+<ul>
+  <li>Implement strong authentication mechanisms</li>
+  <li>Use proper authorization controls</li>
+  <li>Validate all input</li>
+  <li>Monitor API usage patterns</li>
+  <li>Regular security testing</li>
+  <li>Keep documentation updated</li>
+</ul>
+
+<h2 id="tools-for-api-testing">Tools for API Testing</h2>
+<ul>
+  <li>Postman</li>
+  <li>Burp Suite</li>
+  <li>OWASP ZAP</li>
+  <li>JMeter</li>
+  <li>SoapUI</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>API security testing requires a methodical approach and understanding of both security principles and API architecture. Regular testing and following security best practices are essential for maintaining secure APIs.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>OWASP API Security Top 10</li>
+  <li>Various API security resources and tools</li>
+</ul>
 
 <p><a href="https://github.com/0xd4ngi/Hacking-APIs-Breaking-Web-Application-P-Breaking-Web-Application-Programming-Interfaces/blob/main/Corey%20Ball%20-%20Hacking%20APIs-No%20Starch%20Press%20(2022).pdf">Hacking API’s</a></p>
 
@@ -373,7 +424,7 @@ Broken object level authentication(BOLA) is #1 OWASP API Security
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=0xd4ngi&text=Hacking+API%27s+by+%40corey+j.+ball%20http%3A%2F%2Flocalhost%3A4000%2FAPI-Testing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=0xd4ngi&text=Understanding+API+Security+and+Testing%20http%3A%2F%2Flocalhost%3A4000%2FAPI-Testing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FAPI-Testing%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -388,7 +439,7 @@ Broken object level authentication(BOLA) is #1 OWASP API Security
 ">Previous</a>
     
     
-      <a href="/Algorithms-and-computer-network/" class="pagination--pager" title="Algorithms And Computer Network
+      <a href="/computers/programming/Algorithms-and-computer-network/" class="pagination--pager" title="Algorithms and Computer Networks
 ">Next</a>
     
   </nav>
@@ -457,6 +508,47 @@ Broken object level authentication(BOLA) is #1 OWASP API Security
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/risc-v/RISC-V/" rel="permalink">RISC-V Architecture - From Basics to Building a Simple OS
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A deep dive into RISC-V architecture, its implementation, and building a minimal operating system
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/binary-exploitation/virtual-memory-layout/" rel="permalink">Buffer Overflows and The Virtual memory layout
 </a>
       
@@ -498,7 +590,7 @@ Broken object level authentication(BOLA) is #1 OWASP API Security
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/llm/" rel="permalink">Understanding Large Language models(LLMs)
+        <a href="/llm/ai/llm/" rel="permalink">Understanding Large Language models(LLMs)
 </a>
       
     </h2>
@@ -524,47 +616,6 @@ Broken object level authentication(BOLA) is #1 OWASP API Security
 
 
     <p class="archive__item-excerpt" itemprop="description">“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”
-</p>
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/rag/" rel="permalink">Retrieval Augmented Generation(RAG) is a threat to AI
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse
 </p>
   </article>
 </div>

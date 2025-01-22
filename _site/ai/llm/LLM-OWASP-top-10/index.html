@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Understanding Large Language models(LLMs) - PD @0xd4ngi</title>
-<meta name="description" content="“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”">
+<!-- begin _includes/seo.html --><title>LLM OWASP TOP 10 vulnerabilities - PD @0xd4ngi</title>
+<meta name="description" content="LLM1:2025 Prompt Injection/Jailbreaking">
 
 
   <meta name="author" content="Prashant Dangi">
@@ -23,20 +23,20 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="PD @0xd4ngi">
-<meta property="og:title" content="Understanding Large Language models(LLMs)">
-<meta property="og:url" content="http://localhost:4000/llm/">
+<meta property="og:title" content="LLM OWASP TOP 10 vulnerabilities">
+<meta property="og:url" content="http://localhost:4000/ai/llm/LLM-OWASP-top-10/">
 
 
-  <meta property="og:description" content="“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”">
+  <meta property="og:description" content="LLM1:2025 Prompt Injection/Jailbreaking">
 
 
 
 
 
   <meta name="twitter:site" content="@0xd4ngi">
-  <meta name="twitter:title" content="Understanding Large Language models(LLMs)">
-  <meta name="twitter:description" content="“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”">
-  <meta name="twitter:url" content="http://localhost:4000/llm/">
+  <meta name="twitter:title" content="LLM OWASP TOP 10 vulnerabilities">
+  <meta name="twitter:description" content="LLM1:2025 Prompt Injection/Jailbreaking">
+  <meta name="twitter:url" content="http://localhost:4000/ai/llm/LLM-OWASP-top-10/">
 
   
     <meta name="twitter:card" content="summary">
@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-01-04T00:00:00+05:30">
+  <meta property="article:published_time" content="2025-01-02T00:00:00+05:30">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/llm/">
+<link rel="canonical" href="http://localhost:4000/ai/llm/LLM-OWASP-top-10/">
 
 
 
@@ -285,16 +285,16 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Understanding Large Language models(LLMs)">
-    <meta itemprop="description" content="“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”">
-    <meta itemprop="datePublished" content="2025-01-04T00:00:00+05:30">
+    <meta itemprop="headline" content="LLM OWASP TOP 10 vulnerabilities">
+    <meta itemprop="description" content="LLM1:2025 Prompt Injection/Jailbreaking">
+    <meta itemprop="datePublished" content="2025-01-02T00:00:00+05:30">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/llm/" itemprop="url">Understanding Large Language models(LLMs)
+            <a href="http://localhost:4000/ai/llm/LLM-OWASP-top-10/" itemprop="url">LLM OWASP TOP 10 vulnerabilities
 </a>
           </h1>
           
@@ -311,7 +311,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          3 minute read
         
       </span>
     
@@ -326,22 +326,93 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#how-the-large-language-modelllm-works">How the Large Language Model(LLM) works</a></li></ul>
+              <ul class="toc__menu"><li><a href="#llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</a></li><li><a href="#llm22025-sensitive-information-disclosure">LLM2:2025 Sensitive Information Disclosure</a></li><li><a href="#llm32025-supply-chain">LLM3:2025 Supply Chain</a></li><li><a href="#llm42025-data-and-model-poisoning">LLM4:2025 Data and Model Poisoning</a></li><li><a href="#llm52025-improper-output-handling">LLM5:2025 Improper Output Handling</a></li><li><a href="#llm62025-excessive-agency">LLM6:2025 Excessive Agency</a></li><li><a href="#llm72025-system-prompt-leakage">LLM7:2025 System Prompt Leakage</a></li><li><a href="#llm82025-vector-and-embedding-weakness">LLM8:2025 Vector and Embedding Weakness</a></li><li><a href="#llm92025-misinformation">LLM9:2025 Misinformation</a></li><li><a href="#llm102025-unbound-consumption">LLM10:2025 Unbound Consumption</a></li></ul>
             </nav>
           </aside>
         
-        <p>“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”</p>
+        <h3 id="llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</h3>
 
-<h1 id="how-the-large-language-modelllm-works">How the Large Language Model(LLM) works</h1>
+<p>Prompt injection vulnerability alters the Large-Language-Models(LLMs) behavious or output in an unintended way when user prompts something unusual</p>
 
-<p>Large Language Model Works using Deep Learning techniques and large amount of text data. The LLM models are typically
-based on transformer architecture, like generative pre-trained transformer(gpt), which are exceptional at handling sequential data like text input. LLMs consists of multiple layers of Neural Networks, each with parameters that can be fine tuned during training, which are enhanced further by a numerous layer known as attention mechanism, which dials in on specific parts of the data sets.</p>
+<p>Prompt injection does not need text to be human visible/readable as long as the content is parsed by the model.</p>
 
-<p>During training, Large Language Models (LLMs) learn to predict the next word in a sentence by analyzing the context provided by the preceding words. This process assigns probability scores to word sequences that have been tokenized, meaning they are broken into smaller units of characters. These tokens are converted into embeddings, which are numerical representations that capture the context and relationships within the text.</p>
+<p>For Example: Parsing white text on white papers(cannot be parsed by humans but will pe parsed by LLM models)</p>
 
-<p>To achieve high accuracy, LLMs are trained on massive datasets containing billions of text samples. Through zero-shot learning and self-supervised learning, they develop an understanding of grammar, semantics, and conceptual relationships. Once the training phase is complete, LLMs can generate coherent and contextually appropriate text by predicting subsequent words based on the input provided, leveraging patterns and knowledge acquired during training. This capability supports tasks such as natural language understanding (NLU) and content creation.</p>
+<p>Retrieval-Augmented-Generation(RAG) and fine tunning aim to make LLM outputs more relevent and accurate.</p>
 
-<p>Model performance can be further enhanced using techniques like prompt engineering, fine-tuning, and prompt-tuning. Additionally, methods such as reinforcement learning with human feedback (RLHF) are employed to minimize biases, offensive language, and factual inaccuracies—often referred to as hallucinations—that may arise from training on unstructured data. Addressing these issues is critical for ensuring that enterprise-grade LLMs are reliable, meet ethical standards, and do not pose risks related to liability or reputational harm.</p>
+<p>Jailbreaking is a form of prompt injection where the attacker provides inputs that cause the model to disregard its safety protocols entirely.</p>
+
+<h3 id="llm22025-sensitive-information-disclosure">LLM2:2025 Sensitive Information Disclosure</h3>
+
+<p>LLMs when embedded in application exposes risk to expose Sensitive Data, proprietory algorithms, or confidential details through their output.</p>
+
+<p>Revealing training data can expose models to inversion attacks, where attacks extract sensitive information or reconstruct outputs</p>
+
+<p>The “proof pudding attack” (CVE-2019-20634)</p>
+
+<h3 id="llm32025-supply-chain">LLM3:2025 Supply Chain</h3>
+
+<p>LLMs are susceptible to vulnerabilities of third-party pre trained models and data.</p>
+
+<p>Open-access LLMs and fine tunning methods like “LoRA”(Low-Rank Adaptation) and “PEFT”(Parameter-efficient Fine-tunning) especially on platforms like Hugging Face introduce new Supply-Chain Attacks.</p>
+
+<h3 id="llm42025-data-and-model-poisoning">LLM4:2025 Data and Model Poisoning</h3>
+
+<p>Data and Model Poisoning is somewhat same as LLM3:2025 Supply Chain Vulnerabilities discussed above.</p>
+
+<p>Data and model poisoning occurs when pre-trained, fine-tunning and embedded data is manipulated to introduce vulnerabilities, backdoors, or biases</p>
+
+<h3 id="llm52025-improper-output-handling">LLM5:2025 Improper Output Handling</h3>
+
+<p>Improper Output Handling refers specifically to insufficient validation, sanitization, and handling
+of the outputs generated by large language models before they are passed downstream to other
+components and systems. Since LLM-generated content can be controlled by prompt input, this
+behavior is similar to providing users indirect access to additional functionality.</p>
+
+<h3 id="llm62025-excessive-agency">LLM6:2025 Excessive Agency</h3>
+
+<p>LLM-based system is often granted a degree of agency by its developer - the ability to call functions or interface with other systems via extensions (sometimes referred to as tools, skills or
+plugins by different vendors) to undertake actions in response to a prompt. The decision over which extension to invoke may also be delegated to an LLM ‘agent’ to dynamically determine based
+on input prompt or LLM output. Agent-based systems will typically make repeated calls to an LLM using output from previous invocations to ground and direct subsequent invocations.</p>
+
+<p>Excessive Agency is the vulnerability that enables damaging actions to be performed in response to unexpected, ambiguous or manipulated outputs from an LLM, regardless of what is causing the
+LLM to malfunction. Common triggers include:</p>
+
+<p>• hallucination/confabulation caused by poorly-engineered benign prompts, or just a poorly-performing model;</p>
+
+<p>• direct/indirect prompt injection from a malicious user, an earlier invocation of a malicious/compromised extension, or (in multi-agent/collaborative systems) a malicious/compromised peer agent.</p>
+
+<p>The root cause of Excessive Agency is typically one or more of:<br />
+• excessive functionality;<br />
+• excessive permissions;<br />
+• excessive autonomy.</p>
+
+<p>Excessive Agency can lead to a broad range of impacts across the confidentiality, integrity and availability spectrum, and is dependent on which systems an LLM-based app is able to interact
+with.</p>
+
+<p>Note: Excessive Agency differs from Insecure Output Handling which is concerned with insufficient scrutiny of LLM outputs.</p>
+
+<h3 id="llm72025-system-prompt-leakage">LLM7:2025 System Prompt Leakage</h3>
+
+<p>The system prompt leakage vulnerability in LLMs refers to the risk that the system prompts or instructions used to steer the behavior of the model can also contain sensitive information that was not intended to be discovered.</p>
+
+<h3 id="llm82025-vector-and-embedding-weakness">LLM8:2025 Vector and Embedding Weakness</h3>
+
+<p>In System utilizing Retrieval Augmented Model(RAG) with Large Language Models(LLMs) are more prone to these types of attacks.</p>
+
+<p>Weakness in how vectors and embeddings are generated, stored, or retrieved can be exploited by malicious actions(intentional or unintentional) to inject harful content, manipulate model outputs and access sensitive information.</p>
+
+<h3 id="llm92025-misinformation">LLM9:2025 Misinformation</h3>
+
+<p>Large Language Models(LLMs) produces false or misleading information that appears credible.</p>
+
+<p>The major cause of misinformation is LLMs Hallucination. Hallucination occur when LLMs try to fill empty gaps in between unknown user input without truly understanding the content. And this is the major source of Misinformation.</p>
+
+<p>Retrieval-Augmented-Generation(RAG) can be used to improve the reliability of the model.</p>
+
+<h3 id="llm102025-unbound-consumption">LLM10:2025 Unbound Consumption</h3>
+
+<p>Unbounded Consumption refers to the process where a Large Language Model (LLM) generates  outputs based on input queries or prompts. Inference is a critical function of LLMs, involving the application of learned patterns and knowledge to produce relevant responses or predictions.</p>
 
         
       </section>
@@ -351,9 +422,26 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
         
 
 
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ai" class="page__taxonomy-item p-category" rel="tag">AI</a><span class="sep">, </span>
+    
+      <a href="/categories/#llm" class="page__taxonomy-item p-category" rel="tag">LLM</a>
+    
+    </span>
+  </p>
+
+
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-01-04T00:00:00+05:30">January 4, 2025</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-01-02T00:00:00+05:30">January 2, 2025</time></p>
 
       </footer>
 
@@ -362,22 +450,22 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=0xd4ngi&text=Understanding+Large+Language+models%28LLMs%29%20http%3A%2F%2Flocalhost%3A4000%2Fllm%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=0xd4ngi&text=LLM+OWASP+TOP+10+vulnerabilities%20http%3A%2F%2Flocalhost%3A4000%2Fai%2Fllm%2FLLM-OWASP-top-10%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fllm%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fai%2Fllm%2FLLM-OWASP-top-10%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/llm/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/ai/llm/LLM-OWASP-top-10/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/rag/" class="pagination--pager" title="Retrieval Augmented Generation(RAG) is a threat to AI
+      <a href="/cybersecurity/digital-forensics/GPCSSI-24/" class="pagination--pager" title="My Journey at Gurugram Cyber Police Summer Internship 2024
 ">Previous</a>
     
     
-      <a href="/binary-exploitation/virtual-memory-layout/" class="pagination--pager" title="Buffer Overflows and The Virtual memory layout
+      <a href="/ai/llm/rag/rag/" class="pagination--pager" title="Retrieval Augmented Generation(RAG) is a threat to AI
 ">Next</a>
     
   </nav>
@@ -446,6 +534,47 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/risc-v/RISC-V/" rel="permalink">RISC-V Architecture - From Basics to Building a Simple OS
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A deep dive into RISC-V architecture, its implementation, and building a minimal operating system
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/binary-exploitation/virtual-memory-layout/" rel="permalink">Buffer Overflows and The Virtual memory layout
 </a>
       
@@ -487,7 +616,7 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/rag/" rel="permalink">Retrieval Augmented Generation(RAG) is a threat to AI
+        <a href="/llm/ai/llm/" rel="permalink">Understanding Large Language models(LLMs)
 </a>
       
     </h2>
@@ -512,48 +641,7 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse
-</p>
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/LLM-OWASP-top-10/" rel="permalink">LLM OWASP TOP 10 vulnerabilities
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">LLM1:2025 Prompt Injection/Jailbreaking
+    <p class="archive__item-excerpt" itemprop="description">“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”
 </p>
   </article>
 </div>
@@ -644,8 +732,8 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/llm/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/llm"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/ai/llm/LLM-OWASP-top-10/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/ai/llm/LLM-OWASP-top-10"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

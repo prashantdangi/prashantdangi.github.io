@@ -1,5 +1,6 @@
 ---
 title: "LLM OWASP TOP 10 vulnerabilities"
+categories: AI LLM
 ---
 
 

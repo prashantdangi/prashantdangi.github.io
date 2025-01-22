@@ -1,7 +1,7 @@
 ---
 title: "Buffer Overflows and The Virtual memory layout"
 excerpt: " To understand Stack-buffer-overflow attack in the virtual memory"
-categories: binary-exploitation
+categories: Binary-Exploitation
 
 ---
 

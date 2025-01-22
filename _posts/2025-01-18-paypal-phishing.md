@@ -2,7 +2,7 @@
 title: PayPal Phishing with PayPal URL 
 excerpt: Attackers using sophisticated attacks to bypass login security
 
-categories: phishing
+categories: Phishing
 ---
 
 # PayPal Phishing with Paypal URL

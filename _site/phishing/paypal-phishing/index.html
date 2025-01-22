@@ -326,7 +326,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</a></li><li><a href="#this-is-not-tagging-of-url-to-text-but-man-in-the-middlemitm-attack">This is not tagging of url to text but Man in the Middle(MITM) Attack</a></li><li><a href="#but-how-did-he-got-to-know">BUT how did he got to know</a><ul><li><a href="#about-the-email">About the email</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</a></li><li><a href="#this-is-not-tagging-of-url-to-text-but-reverse-web-proxy-phishing">This is not tagging of url to text but reverse web proxy phishing</a></li><li><a href="#but-how-did-he-got-to-know">BUT how did he got to know</a><ul><li><a href="#about-the-email">About the email</a></li></ul></li></ul>
             </nav>
           </aside>
         
@@ -339,14 +339,14 @@
 <p>This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s
 phishing detection policy.</p>
 
-<h1 id="this-is-not-tagging-of-url-to-text-but-man-in-the-middlemitm-attack">This is not tagging of url to text but Man in the Middle(MITM) Attack</h1>
+<h1 id="this-is-not-tagging-of-url-to-text-but-reverse-web-proxy-phishing">This is not tagging of url to text but reverse web proxy phishing</h1>
 
 <p>This attack starts with an authentic email sent from <em>service@paypal.com</em> requsting money for some invoice. Exeperienced internet
 users may be fooled by the email’s appearance and authenticity of email with legitimate PayPal login URL.</p>
 
 <p>The Pay Now button at the bottom is genuine looking redirecting to paypal’s website.</p>
 
-<p>It might be using Man in the Middle(MitM) Proxy phishing. With the help of tools like
+<p>It might be using reverse web Proxy phishing. With the help of tools like
 <a href="https://github.com/kgretzky/evilginx2">Evilginx</a></p>
 
 <p>Tools like <a href="https://github.com/kgretzky/evilginx2">Evilginx</a> uses phishlets to get to legitimate websites and phishing domain lures
@@ -382,7 +382,7 @@ his credentials and cookies might be gone.</p>
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#phishing" class="page__taxonomy-item p-category" rel="tag">phishing</a>
+      <a href="/categories/#phishing" class="page__taxonomy-item p-category" rel="tag">Phishing</a>
     
     </span>
   </p>
@@ -410,7 +410,7 @@ his credentials and cookies might be gone.</p>
       
   <nav class="pagination">
     
-      <a href="/binary-exploitation/virtual-memory-layout/" class="pagination--pager" title="Buffer Overflows and The Virtual memory layout
+      <a href="/risc-v/RISC-V/" class="pagination--pager" title="RISC-V Architecture - From Basics to Building a Simple OS
 ">Previous</a>
     
     
@@ -430,6 +430,47 @@ his credentials and cookies might be gone.</p>
   
   <h2 class="page__related-title">You may also enjoy</h2>
   <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/risc-v/RISC-V/" rel="permalink">RISC-V Architecture - From Basics to Building a Simple OS
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A deep dive into RISC-V architecture, its implementation, and building a minimal operating system
+</p>
+  </article>
+</div>
+
     
       
       
@@ -482,7 +523,7 @@ his credentials and cookies might be gone.</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/llm/" rel="permalink">Understanding Large Language models(LLMs)
+        <a href="/llm/ai/llm/" rel="permalink">Understanding Large Language models(LLMs)
 </a>
       
     </h2>
@@ -523,7 +564,7 @@ his credentials and cookies might be gone.</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/rag/" rel="permalink">Retrieval Augmented Generation(RAG) is a threat to AI
+        <a href="/ai/llm/rag/rag/" rel="permalink">Retrieval Augmented Generation(RAG) is a threat to AI
 </a>
       
     </h2>
@@ -549,47 +590,6 @@ his credentials and cookies might be gone.</p>
 
 
     <p class="archive__item-excerpt" itemprop="description">Some concern and risks associated with RAG that could perceived as threats, in areas related to AI safety and misuse
-</p>
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/LLM-OWASP-top-10/" rel="permalink">LLM OWASP TOP 10 vulnerabilities
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">LLM1:2025 Prompt Injection/Jailbreaking
 </p>
   </article>
 </div>
