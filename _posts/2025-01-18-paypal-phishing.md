@@ -2,7 +2,7 @@
 title: PayPal Phishing with PayPal URL 
 excerpt: Attackers using sophisticated attacks to bypass login security
 
-categories: Phishing
+categories: phishing
 ---
 
 # PayPal Phishing with Paypal URL
@@ -37,6 +37,8 @@ his credentials and cookies might be gone.
 ## About the email
 
 The attackers have registered a MS365 test domain, Which is free for three months, and then a distribution list containing the victim emails *.onmicrosoft.com*
+
+
 
 
 Reference for the post: [Phish-free PayPal Phishing](https://www.fortinet.com/blog/threat-research/phish-free-paypal-phishing)
