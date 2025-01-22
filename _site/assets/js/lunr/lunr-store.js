@@ -78,7 +78,7 @@ var store = [{
         "teaser": null
       },{
         "title": "PayPal Phishing with PayPal URL",
-        "excerpt":"PayPal Phishing with Paypal URL Fortinet CISO received a mail requesting an invoice amount to be paid, with paypal domain paypal.com This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s phishing detection policy. This is not tagging of...","categories": ["Phishing"],
+        "excerpt":"PayPal Phishing with Paypal URL Fortinet CISO received a mail requesting an invoice amount to be paid, with paypal domain paypal.com This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s phishing detection policy. This is not tagging of...","categories": ["phishing"],
         "tags": [],
         "url": "/phishing/paypal-phishing/",
         "teaser": null
