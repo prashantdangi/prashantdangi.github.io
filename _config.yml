@@ -147,12 +147,12 @@ analytics:
 # Site Footer
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:prashantdangi983@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://prashantdangi.github.io"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:prashantdangi983@gmail.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://prashantdangi.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/prashantdangi"  
