@@ -1,13 +1,14 @@
 # main links
 main:
-  - title: "HackSpot"
-    url: /hackspot/
+  - title: "VEX"
+    url: /vex/
+  - title: "Blogs by Categories"
+    url: /blogsbycategories/
   - title: "Archive"
     url: /archive/  
   - title: "About"
     url: /about/
-  # - title: "Privacy Policy"
-  #   url: /privacy-policy/
+  
   
   
   
