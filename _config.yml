@@ -163,6 +163,10 @@ footer:
     - label: "Skool"
       icon: "fas fa-fw fa-link"
       url: "https://www.skool.com/signup?ref=5ef31da0801f4d8e86da2ffea203b46e"
+    - label: "The Skool Games"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.skool.com/games?ref=5ef31da0801f4d8e86da2ffea203b46e"
+    
     # - label: "Bitbucket"
     #   icon: "fab fa-fw fa-bitbucket"
     #   # url:
