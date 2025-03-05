@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: /home/
   # - title: "Join Telegram"
   #   url: /t.me/prashantdangiblogs/
   - title: "VEX"
