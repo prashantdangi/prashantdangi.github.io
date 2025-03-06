@@ -1,4 +1,4 @@
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" 
 
 # Site Settings
 locale                   : "en-US"
@@ -326,14 +326,23 @@ defaults:
       toc: true
       toc_sticky: true
       
-    # _pages
+  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _regex
+      
+  # home page
+  - scope:
+      path: "home.md"
+      type: pages
+    values:
+      layout: home
+      author_profile: true
+
+# _regex
   - scope:
       path: ""
       type: regex

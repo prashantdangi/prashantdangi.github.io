@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: /home/
-  # - title: "Join Telegram"
-  #   url: /t.me/prashantdangiblogs/
+  - title: "Blogs"
+    url: /blogs/
   - title: "VEX"
     url: /vex/
   - title: "Jobs"
