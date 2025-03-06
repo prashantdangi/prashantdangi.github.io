@@ -1,7 +1,6 @@
 ---
 layout: splash
-title: ""
-permalink: /home
+permalink: /
 hidden: true
 header:
   overlay_color: "#1a1a1a"
