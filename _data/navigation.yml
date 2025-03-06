@@ -1,23 +1,12 @@
 # main links
 main:
-  - title: "Home"
-    url: /home/
-  - title: "Blogs"
-    url: /blogs/
-  - title: "VEX"
-    url: /vex/
-  - title: "Jobs"
-    url: /jobs/
-  # - title: "Hackathons"
-  #   url: /hackathons/
   - title: "Blogs by Categories"
     url: /blogsbycategories/
   - title: "Archive"
     url: /archive/  
   - title: "About"
     url: /about/
-  - title: "FAQ"
-    url: /faq/
+  
 
   
   
