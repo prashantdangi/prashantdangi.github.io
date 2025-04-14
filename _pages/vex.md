@@ -37,7 +37,14 @@ feature_row:
     excerpt: "Comprehensive documentation, tutorials, and dedicated support to help you achieve your goals."
     url: "/resources/"
     btn_class: "btn--primary"
-    btn_label: "Learn More"    
+    btn_label: "Learn More"   
+  - image_path: /assets/images/girll.jpeg
+    alt: "professional services"
+    title: "Professional Services"
+    excerpt: "Expert consultation, implementation, and support services to ensure your success at every step of the journey."
+    url: "/services/"
+    btn_class: "btn--primary"
+    btn_label: "Our Services" 
 
 ---
 

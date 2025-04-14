@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Blogs by Categories"
-    url: /blogsbycategories/
-  - title: "Archive"
-    url: /archive/  
+  - title: "Blogs"
+    url: /blogs/
+  # - title: "Archive"
+  #   url: /archive/  
   - title: "About"
     url: /about/
   
