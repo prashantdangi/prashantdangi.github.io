@@ -18,4 +18,4 @@ is where I’ll be untangling the absurd, the profound, and the downright madden
 so I’ll use this instrument to hit on these topics in a way that is hopefully thoughtful, fun and where necessary, biting. 
 Also, a lot of self-reflection, and undoubtedly self-deprecation, because if you can’t laugh at yourself, you’re probably not trying hard enough. Or you’re Elon Musk.
 
-Hi! My name is Prashant Dangi and I am a 3rd year undegrad pursuing my bachelors in Computer Science from college Bennett university.
+<!-- -->
