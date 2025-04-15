@@ -20,10 +20,10 @@ feature_row:
   - image_path: /assets/images/square.png
     alt: "Entrepreneurship"
     title: "Entrepreneurship"
-    excerpt: "Relentlessly chasing Success"
-    url: "/about/"
+    excerpt: "Relentlessly chasing Success - **I used to chase shells**"
+    url: "/I-Used-to-chase-shell/"
     btn_class: "btn--primary"
-    btn_label: "Explore"
+    btn_label: "Read More"
   - image_path: /assets/images/triangle.png
     alt: "About Me"
     title: "About Me"
