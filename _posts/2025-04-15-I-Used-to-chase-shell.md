@@ -11,6 +11,8 @@ Fast forward to today, and I’m seeing a similar split—this time in AI.
 
 On one side, you’ve got **hardcore AI engineers:** folks grinding on transformer architectures, optimization tricks, distributed training, bleeding-edge math. And then there’s a wave of what I call "vibe coders"—the ones using those hard-earned tools to stitch together websites with payment systems, Auth, and some vague dashboard they probably can’t explain.
 
+![](/assets/images/shells.jpeg)
+
 They’re not solving real problems. They’re chasing MRR goals and startup hype.
 No deep ideas.
 No technical backbone.
