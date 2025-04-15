@@ -4,7 +4,7 @@ main:
     url: /blogs/
   # - title: "Archive"
   #   url: /archive/  
-  - title: "About"
+  - title: "About Me"
     url: /about/
   
 
